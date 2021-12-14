@@ -1,0 +1,108 @@
+const servateCreatorsDB = servateDB("secret_key").database("creators.so")
+
+const [counter, setCounter] = servateCreatorsDB.atom("index.waitinglist.counter")
+API:
+    atom: [Promise<T>, (T) => Promise<Response<T>>]
+    atomSync: Promise<[T, (T) => Promise<Response<T>>]>
+    atomValue: Promise<T>
+    atomState: (T) => Promise<Response<T>>
+
+STACK:
+    - Front&Back End: NextJS & Prisma (ChakraUI for style?)
+    - Database: Heroku
+
+LANDING:
+- Hero with example:
+    Headline: Server store for databaseless NextJS and React apps.
+    Description: Servate (server state) is a key-value database and library for storing small bits of JSON data, specifically designed to enrich your web apps.
+
+    ```typescript
+    // npm install servate
+    // yarn install servate
+
+    // Global or inline, your choice
+    const servateDB = servateDB("secret_key").database("db_name")
+
+    // Client side
+    export default () => {
+        const counter = await servateDB.atomValue("index.waitinglist.counter")
+        return (
+            <span>Counter value: {counter}</span>
+        )
+    }
+
+    // Server side
+    export default async (req: NextApiRequest, res: NextApiResponse) => {
+        const [counter, setCounter] = await servateDB.atomSync("index.waitinglist.counter")
+        setCounter(counter + 1)
+    }
+    ```
+- Pricing:
+    - Multiple databases: 100 MAX
+    - Multiple atoms: FREE
+    - Libraries for NextJS & React: FREE
+    - Upload + Download: first 10MB free, then 1$ / 100MB.
+
+APP:
+Personal infos:
+    - Show: secret key (hidden by default) + regenerate, total bandwidth consumed, total requests, size (bytes, KB)
+List of all database names
+Create new database
+    - Requires: name
+    - Shows: total bandwidth consumed, total requests, size (bytes, KB)
+    - Effects:
+        - Creates a new record table databases
+Database detail:
+    - List all atom names
+    - Actions:
+        - Edit name
+        - Delete database
+            - Effects:
+                - Call "delete" on all atoms
+                - Delete record in table databases
+Atom detail:
+    - Show: json stored, total bandwidth consumed, total requests, size (bytes, KB)
+    - Actions:
+        - Edit name
+        - Delete atom:
+            - Effects:
+                - Update personal+database sizes
+                - Delete record in table atoms
+
+PRICING:
+
+First 10MB bandwidth(upload + download) is free. Then need to purchase more bandwidth:
+- 100MB: $1
+- 1G: 10$
+
+LIMITS: Max 100KB (?? Need to search max for rows in db) atom size.
+
+TABLES:
+
+users:
+- id
+- github_token_id ???
+- secret_key
+- consumed_bandwidth
+- consumed_requests
+- consumed_size
+- created_on
+
+databases:
+- id
+- user_id
+- name
+- consumed_bandwidth
+- consumed_requests
+- consumed_size
+- created_on
+
+atoms:
+- id
+- database_id
+- name
+- data
+- consumed_bandwidth
+- consumed_requests
+- consumed_size
+- created_on

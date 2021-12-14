@@ -1,0 +1,33 @@
+{
+    "name": "creators-design-playground",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "vercel-build": "prisma generate && next build",
+        "prisma-client-generate": "prisma generate",
+        "prisma-db-migrate": "npx prisma migrate dev"
+    },
+    "dependencies": {
+        "classnames": "2.2.6",
+        "next": "12.0.1",
+        "next-plugin-preact": "3.0.6",
+        "preact": "10.5.15",
+        "preact-render-to-string": "5.1.19",
+        "react": "npm:@preact/compat",
+        "react-dom": "npm:@preact/compat",
+        "react-icons": "4.1.0",
+        "react-ssr-prepass": "npm:preact-ssr-prepass"
+    },
+    "devDependencies": {
+        "@tailwindcss/line-clamp": "0.3.0",
+        "@types/classnames": "2.2.11",
+        "@types/node": "16.11.6",
+        "@types/react": "17.0.33",
+        "autoprefixer": "10.4.0",
+        "postcss": "8.4.5",
+        "tailwindcss": "3.0.2",
+        "typescript": "4.5.4"
+    }
+}
