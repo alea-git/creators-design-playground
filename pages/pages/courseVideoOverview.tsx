@@ -162,315 +162,89 @@ export default function courseVideoOverview() {
                         </div>
                     </div>
                 </div>
+
                 <div className="w-full max-w-sm" />
-                <div className="w-full max-w-sm fixed py-4 top-0 pt-[70px] right-[8.5rem] bottom-0 overflow-y-auto">
-                    <div className="space-y-2 bg-white">
-                        <div className="sticky top-0 flex flex-row items-center pt-8 pb-4 space-x-4 bg-white">
-                            <div className="flex items-center justify-center w-8 h-8 border border-gray-200 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-                                </svg>
-                            </div>
-                            <h6 className="text-lg font-semibold">
-                                1. Introduzione
-                            </h6>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
+                <div className="w-full max-w-sm fixed py-4 top-0 pt-[64px] right-[8.5rem] bottom-0 overflow-y-auto">
+                    {[...Array(10)].map(_ => (
+                        <div className="space-y-2 bg-white">
+                            <div className="sticky top-0 flex flex-row items-center pt-8 pb-4 space-x-4 bg-white">
+                                <div className="flex items-center justify-center w-8 h-8 border border-gray-200 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                                    </svg>
+                                </div>
+                                <h6 className="text-lg font-semibold">
                                     1. Introduzione
                                 </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
                             </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
+                            <div className="flex flex-row items-center space-x-4">
+                                <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
+                                <div className="flex-1">
+                                    <h6 className="font-medium leading-none">
+                                        1. Introduzione
+                                    </h6>
+                                    <span className="text-sm text-gray-400">
+                                        23:40
+                                    </span>
+                                </div>
+                                <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
                             </div>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
+                            <div className="flex flex-row items-center space-x-4">
+                                <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
+                                <div className="flex-1">
+                                    <h6 className="font-medium leading-none">
+                                        1. Introduzione
+                                    </h6>
+                                    <span className="text-sm text-gray-400">
+                                        23:40
+                                    </span>
+                                </div>
+                                <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
                             </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
+                            <div className="flex flex-row items-center space-x-4">
+                                <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
+                                <div className="flex-1">
+                                    <h6 className="font-medium leading-none">
+                                        1. Introduzione
+                                    </h6>
+                                    <span className="text-sm text-gray-400">
+                                        23:40
+                                    </span>
+                                </div>
+                                <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
                             </div>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-2 bg-white">
-                        <div className="sticky top-0 flex flex-row items-center pt-8 pb-4 space-x-4 bg-white">
-                            <div className="flex items-center justify-center w-8 h-8 border border-gray-200 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-                                </svg>
-                            </div>
-                            <h6 className="text-lg font-semibold">
-                                2. Componenti
-                            </h6>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
+                            <div className="flex flex-row items-center space-x-4">
+                                <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
+                                <div className="flex-1">
+                                    <h6 className="font-medium leading-none">
+                                        1. Introduzione
+                                    </h6>
+                                    <span className="text-sm text-gray-400">
+                                        23:40
+                                    </span>
+                                </div>
+                                <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-2 bg-white">
-                        <div className="sticky top-0 flex flex-row items-center pt-8 pb-4 space-x-4 bg-white">
-                            <div className="flex items-center justify-center w-8 h-8 border border-gray-200 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-                                </svg>
-                            </div>
-                            <h6 className="text-lg font-semibold">
-                                3. Liste scrollabili
-                            </h6>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-2 bg-white">
-                        <div className="sticky top-0 flex flex-row items-center pt-8 pb-4 space-x-4 bg-white">
-                            <div className="flex items-center justify-center w-8 h-8 border border-gray-200 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-                                </svg>
-                            </div>
-                            <h6 className="text-lg font-semibold">
-                                4. HTTP &amp; JSON
-                            </h6>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="flex flex-row items-center space-x-4">
-                            <div className="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                            <div className="flex-1">
-                                <h6 className="font-medium leading-none">
-                                    1. Introduzione
-                                </h6>
-                                <span className="text-sm text-gray-400">
-                                    23:40
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-center w-5 h-5 text-white bg-purple-500 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>
-
     )
 }

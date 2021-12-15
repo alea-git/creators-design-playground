@@ -51,263 +51,84 @@ export default function home() {
                 </div>
             </div>
 
-            <div className="relative w-full py-8 mx-auto space-y-32 border-gray-200 max-w-7xl border-x">
-                <div>
-                    <div>
-                        <div className="max-w-3xl p-8">
-                            <h2 className="text-3xl font-extrabold">
-                                Flutter Developer
-                            </h2>
+            <div className="relative grid w-full grid-cols-2 gap-8 py-8 mx-auto max-w-7xl">
+                {[...Array(4)].map(_ => (
+                    <div className="flex flex-row items-stretch overflow-hidden text-gray-700 border border-gray-200 rounded-md cursor-pointer">
+                        <div className="w-40 bg-gray-900">
+                        </div>
 
-                            <div className="flex flex-row items-center mt-4 space-x-1">
-                                <span className="px-3 py-1 text-sm font-medium text-green-900 bg-green-100 rounded">
-                                    Aggiornato a Flutter 2
-                                </span>
+                        <div className="flex flex-col flex-1 py-2">
+                            <div className="flex flex-row self-end h-6">
+                                <div className="inline-block w-6 overflow-hidden h-9">
+                                    <div className="h-full origin-top-left transform -rotate-45 bg-violet-600"></div>
+                                </div>
+
+                                <div className="flex items-center justify-center px-2 bg-violet-600">
+                                    <span className="text-xs font-semibold tracking-tight text-white uppercase">
+                                        Percorso formativo
+                                    </span>
+                                </div>
                             </div>
 
-                            <p className="mt-4 text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime dolore modi ratione sit. Ea veritatis iusto saepe laboriosam ullam asperiores aut! Consequuntur omnis, necessitatibus a repudiandae voluptate ea! Non, aperiam!
-                            </p>
+                            <div className="px-6 pb-4 space-y-2">
+                                <h6 className="text-xl font-bold text-gray-900">
+                                    Flutter Developer
+                                </h6>
 
-                            <div className="grid grid-cols-3 gap-4 mt-8">
-                                <div className="flex flex-row items-center space-x-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <p className="text-sm leading-5">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam consequuntur consequatur officia pariatur soluta aliquid eaque.
+                                </p>
+                            </div>
+
+                            <div className="flex flex-row items-center w-full px-6 py-2 space-x-4 bg-purple-50">
+                                <div className="flex flex-row items-center space-x-2 text-purple-900">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                     </svg>
 
-                                    <span>
-                                        7 corsi
+                                    <span className="text-sm">
+                                        Novizio
                                     </span>
                                 </div>
 
-                                <div className="flex flex-row items-center space-x-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <div className="flex flex-row items-center space-x-2 text-purple-900">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
 
-                                    <span>
-                                        39 sezioni
+                                    <span className="text-sm">
+                                        27 ore
                                     </span>
                                 </div>
+                            </div>
 
-                                <div className="flex flex-row items-center space-x-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
+                            <div className="px-6 py-6 space-y-6">
+                                <div className="space-y-2">
+                                    <h6 className="text-xs font-bold tracking-tight text-purple-800 uppercase">
+                                        Argomenti trattati
+                                    </h6>
 
-                                    <span>
-                                        143 lezioni
-                                    </span>
+                                    <p className="text-sm leading-5">
+                                        Front-End Development Basics, HTML, CSS, Python Syntax,
+                                        Text Processing in Python, DevTools, Command Line Interface
+                                        Basics, Code Debugging, JavaScript Data Structures, Control
+                                        Flow in JavaScript
+                                    </p>
                                 </div>
 
-                                <div className="flex flex-row items-center space-x-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
+                                <div className="space-y-2">
+                                    <h6 className="text-xs font-bold tracking-tight text-purple-800 uppercase">
+                                        Prerequisiti
+                                    </h6>
 
-                                    <span>
-                                        17 ore
-                                    </span>
-                                </div>
-
-                                <div className="flex flex-row items-center space-x-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-
-                                    <span>
-                                        Materiali aggiuntivi
-                                    </span>
-                                </div>
-
-                                <div className="flex flex-row items-center space-x-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-
-                                    <span>
-                                        Supporto community
-                                    </span>
-                                </div>
-
-                                <div className="flex flex-row items-center space-x-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-
-                                    <span>
-                                        Supporto insegnante
-                                    </span>
-                                </div>
-
-                                <div className="flex flex-row items-center space-x-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-
-                                    <span>
-                                        Accesso per la vita
-                                    </span>
+                                    <p className="text-sm leading-5">
+                                        Conoscenza base di programmazione in qualsiasi linguaggio
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div className="w-full grid grid-cols-4 gap-[1px] py-[1px] bg-gray-200">
-                        <div className="flex flex-col items-center p-8 text-center bg-white">
-                            <div className="w-full bg-gray-100 rounded-sm aspect-square"></div>
-
-                            <h6 className="mt-4 text-lg font-semibold">
-                                1. Flutter 2 Start
-                            </h6>
-
-                            <p className="mt-2 leading-6 text-gray-500">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit id consequuntur fuga voluptas architecto autem commodi.
-                            </p>
-
-                            <div className="flex flex-row items-center mt-2 space-x-1 text-sm text-gray-500 text-gray-dark-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span>7 ore</span>
-                            </div>
-
-                        </div>
-
-                        <div className="flex flex-col items-center p-8 text-center bg-white">
-                            <div className="w-full bg-gray-100 rounded-sm aspect-square"></div>
-
-                            <h6 className="mt-4 text-lg font-semibold">
-                                1. Flutter 2 Start
-                            </h6>
-
-                            <p className="mt-2 leading-6 text-gray-500">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit id consequuntur fuga voluptas architecto autem commodi.
-                            </p>
-
-                            <div className="flex flex-row items-center mt-2 space-x-1 text-sm text-gray-500 text-gray-dark-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span>7 ore</span>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col items-center p-8 text-center bg-white">
-                            <div className="w-full bg-gray-100 rounded-sm aspect-square"></div>
-
-                            <h6 className="mt-4 text-lg font-semibold">
-                                1. Flutter 2 Start
-                            </h6>
-
-                            <p className="mt-2 leading-6 text-gray-500">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit id consequuntur fuga voluptas architecto autem commodi.
-                            </p>
-
-                            <div className="flex flex-row items-center mt-2 space-x-1 text-sm text-gray-500 text-gray-dark-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span>7 ore</span>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col items-center p-8 text-center bg-white">
-                            <div className="w-full bg-gray-100 rounded-sm aspect-square"></div>
-
-                            <h6 className="mt-4 text-lg font-semibold">
-                                1. Flutter 2 Start
-                            </h6>
-
-                            <p className="mt-2 leading-6 text-gray-500">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit id consequuntur fuga voluptas architecto autem commodi.
-                            </p>
-
-                            <div className="flex flex-row items-center mt-2 space-x-1 text-sm text-gray-500 text-gray-dark-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span>7 ore</span>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col items-center p-8 text-center bg-white">
-                            <div className="w-full bg-gray-100 rounded-sm aspect-square"></div>
-
-                            <h6 className="mt-4 text-lg font-semibold">
-                                1. Flutter 2 Start
-                            </h6>
-
-                            <p className="mt-2 leading-6 text-gray-500">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit id consequuntur fuga voluptas architecto autem commodi.
-                            </p>
-
-                            <div className="flex flex-row items-center mt-2 space-x-1 text-sm text-gray-500 text-gray-dark-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span>7 ore</span>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col items-center p-8 text-center bg-white">
-                            <div className="w-full bg-gray-100 rounded-sm aspect-square"></div>
-
-                            <h6 className="mt-4 text-lg font-semibold">
-                                1. Flutter 2 Start
-                            </h6>
-
-                            <p className="mt-2 leading-6 text-gray-500">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit id consequuntur fuga voluptas architecto autem commodi.
-                            </p>
-
-                            <div className="flex flex-row items-center mt-2 space-x-1 text-sm text-gray-500 text-gray-dark-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span>7 ore</span>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col items-center p-8 text-center bg-white">
-                            <div className="w-full bg-gray-100 rounded-sm aspect-square"></div>
-
-                            <h6 className="mt-4 text-lg font-semibold">
-                                1. Flutter 2 Start
-                            </h6>
-
-                            <p className="mt-2 leading-6 text-gray-500">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit id consequuntur fuga voluptas architecto autem commodi.
-                            </p>
-
-                            <div className="flex flex-row items-center mt-2 space-x-1 text-sm text-gray-500 text-gray-dark-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span>7 ore</span>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col items-center p-8 text-center bg-white">
-                            <div className="w-full bg-gray-100 rounded-sm aspect-square"></div>
-
-                            <h6 className="mt-4 text-lg font-semibold">
-                                1. Flutter 2 Start
-                            </h6>
-
-                            <p className="mt-2 leading-6 text-gray-500">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit id consequuntur fuga voluptas architecto autem commodi.
-                            </p>
-
-                            <div className="flex flex-row items-center mt-2 space-x-1 text-sm text-gray-500 text-gray-dark-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span>7 ore</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     )

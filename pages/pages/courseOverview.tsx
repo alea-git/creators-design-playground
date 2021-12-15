@@ -29,45 +29,23 @@ export default function courseOverview() {
                         </p>
                     </div>
                     <div className="relative w-full mt-8">
-                        <div className="flex flex-row items-stretch mx-auto max-w-7xl">
+                        <div className="flex flex-row items-stretch max-w-xl mx-auto">
                             <div className="flex flex-row items-center flex-1">
-                                <div className="flex flex-col flex-1 py-3 space-y-1">
+                                <div className="flex flex-col flex-1 py-3 space-y-1 text-left">
                                     <span className="text-xs text-gray-500 uppercase">
-                                        Sezioni — Guardate
+                                        Lezioni guardate
                                     </span>
                                     <span className="font-medium">
-                                        8 — 3
+                                        12 <span className="mx-1 font-normal text-gray-500">su</span> 123
                                     </span>
                                 </div>
                                 <div className="w-5 h-5 -mt-0.5 bg-transparent rounded-full border-[3px] border-gray-600" />
                             </div>
-                            <div className="w-8 mx-8" style={{ background: 'linear-gradient(to top left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) calc(50% - 0.8px), #e5e7eb 50%, rgba(0,0,0,0) calc(50% + 0.8px), rgba(0,0,0,0) 100%)' }} />
+
+                            <div className="w-8 mx-12" style={{ background: 'linear-gradient(to top left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) calc(50% - 0.8px), #e5e7eb 50%, rgba(0,0,0,0) calc(50% + 0.8px), rgba(0,0,0,0) 100%)' }} />
+
                             <div className="flex flex-row items-center flex-1">
-                                <div className="flex flex-col flex-1 py-3 space-y-1">
-                                    <span className="text-xs text-gray-500 uppercase">
-                                        Lezioni — Guardate
-                                    </span>
-                                    <span className="font-medium">
-                                        123 — 12
-                                    </span>
-                                </div>
-                                <div className="w-5 h-5 -mt-0.5 bg-transparent rounded-full border-[3px] border-gray-600" />
-                            </div>
-                            <div className="w-8 mx-8" style={{ background: 'linear-gradient(to top left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) calc(50% - 0.8px), #e5e7eb 50%, rgba(0,0,0,0) calc(50% + 0.8px), rgba(0,0,0,0) 100%)' }} />
-                            <div className="flex flex-row items-center flex-1">
-                                <div className="flex flex-col flex-1 py-3 space-y-1">
-                                    <span className="text-xs text-gray-500 uppercase">
-                                        Ore — Guardate
-                                    </span>
-                                    <span className="font-medium">
-                                        8 — 3:30
-                                    </span>
-                                </div>
-                                <div className="w-5 h-5 -mt-0.5 bg-transparent rounded-full border-[3px] border-gray-600" />
-                            </div>
-                            <div className="w-8 mx-8" style={{ background: 'linear-gradient(to top left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) calc(50% - 0.8px), #e5e7eb 50%, rgba(0,0,0,0) calc(50% + 0.8px), rgba(0,0,0,0) 100%)' }} />
-                            <div className="flex flex-row items-center flex-1">
-                                <div className="flex flex-col flex-1 py-3 space-y-1">
+                                <div className="flex flex-col flex-1 py-3 space-y-1 text-left">
                                     <span className="text-xs text-gray-500 uppercase">
                                         Streak giorni
                                     </span>
@@ -80,27 +58,19 @@ export default function courseOverview() {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
                                 </svg>
                             </div>
-                            <div className="w-8 mx-8" style={{ background: 'linear-gradient(to top left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) calc(50% - 0.8px), #e5e7eb 50%, rgba(0,0,0,0) calc(50% + 0.8px), rgba(0,0,0,0) 100%)' }} />
-                            <div className="flex flex-row items-center flex-1">
-                                <div className="flex flex-col flex-1 py-3 space-y-1">
-                                    <span className="text-xs text-gray-500 uppercase">
-                                        Classifica membri
-                                    </span>
-                                    <span className="font-medium">
-                                        12°
-                                    </span>
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z" />
-                                </svg>
-                            </div>
                         </div>
                     </div>
                 </div>
             </ContentHeader>
 
             <div className="border-b border-gray-200 sticky top-[4rem] bg-white z-10">
-                <div className="flex flex-row items-center justify-between w-full py-2 mx-auto space-x-16 max-w-7xl">
+                <div className="flex flex-row items-center justify-between w-full mx-auto space-x-8 max-w-7xl">
+                    <div className="flex items-center justify-center py-2.5 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                        </svg>
+                    </div>
+
                     <div className="flex flex-row flex-1 py-2 overflow-x-auto">
                         <span className="font-medium whitespace-nowrap text-violet-900 py-2.5 px-4 bg-violet-100 rounded-sm cursor-pointer hover:border-gray-900">1. Introduzione</span>
                         <span className="font-medium whitespace-nowrap text-gray-500 py-2.5 px-4 cursor-pointer hover:border-gray-900">2. Componenti</span>
@@ -127,169 +97,48 @@ export default function courseOverview() {
                     <span> Search discounts by name or code... </span>
                 </div>
                 <div className="grid grid-cols-4 gap-8 pt-8 mx-auto max-w-7xl">
-                    <div className="space-y-4">
-                        <div className="pb-[66%] relative bg-violet-500 rounded-sm">
-                            <div className="absolute inset-0 bg-gray-300 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                        </div>
-                        <div className="flex flex-col px-1">
-                            <div>
-                                <div className="flex flex-row items-center w-full">
-                                    <h6 className="flex-1 text-lg font-medium leading-none">TabBar</h6>
-                                    <div className="w-5 h-5 -mt-0.5 bg-white rounded-full border-[3px] border-violet-500" />
+                    {[...Array(6)].map(_ => (
+                        <div className="space-y-4">
+                            <div className="pb-[66%] relative bg-violet-500 rounded-md overflow-hidden">
+                                <div className="absolute inset-0 bg-gray-300 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
+                            </div>
+                            <div className="flex flex-col px-1">
+                                <div>
+                                    <div className="flex flex-row items-center w-full">
+                                        <h6 className="flex-1 text-lg font-medium leading-none">TabBar</h6>
+                                        <div className="w-5 h-5 -mt-0.5 bg-white rounded-full border-[3px] border-violet-500" />
+                                    </div>
+                                    <span className="text-sm text-gray-500">
+                                        8:32 — 1. Introduzione
+                                    </span>
                                 </div>
-                                <span className="text-sm text-gray-500">
-                                    8:32 — 1. Introduzione
-                                </span>
                             </div>
                         </div>
-                    </div>
-                    <div className="space-y-4">
-                        <div className="pb-[66%] relative bg-violet-500 rounded-sm">
-                            <div className="absolute inset-0 m-2 bg-gray-300 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                        </div>
-                        <div className="flex flex-col px-1">
-                            <div>
-                                <div className="flex flex-row items-center w-full">
-                                    <h6 className="flex-1 text-lg font-medium leading-none">TabBar</h6>
-                                    <div className="w-5 h-5 -mt-0.5 bg-white rounded-full border-[3px] border-violet-500" />
-                                </div>
-                                <span className="text-sm text-gray-500">
-                                    8:32 — 1. Introduzione
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-4">
-                        <div className="pb-[66%] relative bg-violet-500 rounded-sm">
-                            <div className="absolute inset-0 bg-gray-300 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                        </div>
-                        <div className="flex flex-col px-1">
-                            <div>
-                                <div className="flex flex-row items-center w-full">
-                                    <h6 className="flex-1 text-lg font-medium leading-none">TabBar</h6>
-                                    <div className="w-5 h-5 -mt-0.5 bg-white rounded-full border-[3px] border-violet-500" />
-                                </div>
-                                <span className="text-sm text-gray-500">
-                                    8:32 — 1. Introduzione
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-4">
-                        <div className="pb-[66%] relative bg-violet-500 rounded-sm">
-                            <div className="absolute inset-0 bg-gray-300 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                        </div>
-                        <div className="flex flex-col px-1">
-                            <div>
-                                <div className="flex flex-row items-center w-full">
-                                    <h6 className="flex-1 text-lg font-medium leading-none">TabBar</h6>
-                                    <div className="w-5 h-5 -mt-0.5 bg-white rounded-full border-[3px] border-violet-500" />
-                                </div>
-                                <span className="text-sm text-gray-500">
-                                    8:32 — 1. Introduzione
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-4">
-                        <div className="pb-[66%] relative bg-violet-500 rounded-sm">
-                            <div className="absolute inset-0 bg-gray-300 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                        </div>
-                        <div className="flex flex-col px-1">
-                            <div>
-                                <div className="flex flex-row items-center w-full">
-                                    <h6 className="flex-1 text-lg font-medium leading-none">TabBar</h6>
-                                    <div className="w-5 h-5 -mt-0.5 bg-white rounded-full border-[3px] border-violet-500" />
-                                </div>
-                                <span className="text-sm text-gray-500">
-                                    8:32 — 1. Introduzione
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-4">
-                        <div className="pb-[66%] relative bg-violet-500 rounded-sm">
-                            <div className="absolute inset-0 bg-gray-300 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                        </div>
-                        <div className="flex flex-col px-1">
-                            <div>
-                                <div className="flex flex-row items-center w-full">
-                                    <h6 className="flex-1 text-lg font-medium leading-none">TabBar</h6>
-                                    <div className="w-5 h-5 -mt-0.5 bg-white rounded-full border-[3px] border-violet-500" />
-                                </div>
-                                <span className="text-sm text-gray-500">
-                                    8:32 — 1. Introduzione
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-4">
-                        <div className="pb-[66%] relative bg-violet-500 rounded-sm">
-                            <div className="absolute inset-0 bg-gray-300 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                        </div>
-                        <div className="flex flex-col px-1">
-                            <div>
-                                <div className="flex flex-row items-center w-full">
-                                    <h6 className="flex-1 text-lg font-medium leading-none">TabBar</h6>
-                                    <div className="w-5 h-5 -mt-0.5 bg-white rounded-full border-[3px] border-violet-500" />
-                                </div>
-                                <span className="text-sm text-gray-500">
-                                    8:32 — 1. Introduzione
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
+
+            <div className="w-full h-[1px] bg-gray-200 my-4"></div>
+
             <div className="grid grid-cols-4 gap-8 py-8 mx-auto max-w-7xl">
-                <div className="space-y-4">
-                    <div className="pb-[66%] relative bg-violet-500 rounded-sm">
-                        <div className="absolute inset-0 bg-gray-300 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                    </div>
-                    <div className="flex flex-col px-1">
-                        <div>
-                            <div className="flex flex-row items-center w-full">
-                                <h6 className="flex-1 text-lg font-medium leading-none">TabBar</h6>
-                                <div className="w-5 h-5 -mt-0.5 bg-white rounded-full border-[3px] border-violet-500" />
+                {[...Array(2)].map(_ => (
+                    <div className="space-y-4">
+                        <div className="pb-[66%] relative bg-violet-500 rounded-md overflow-hidden">
+                            <div className="absolute inset-0 bg-gray-300 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
+                        </div>
+                        <div className="flex flex-col px-1">
+                            <div>
+                                <div className="flex flex-row items-center w-full">
+                                    <h6 className="flex-1 text-lg font-medium leading-none">TabBar</h6>
+                                    <div className="w-5 h-5 -mt-0.5 bg-white rounded-full border-[3px] border-violet-500" />
+                                </div>
+                                <span className="text-sm text-gray-500">
+                                    8:32 — 2. Componenti
+                                </span>
                             </div>
-                            <span className="text-sm text-gray-500">
-                                8:32 — 2. Componenti
-                            </span>
                         </div>
                     </div>
-                </div>
-                <div className="space-y-4">
-                    <div className="pb-[66%] relative bg-violet-500 rounded-sm">
-                        <div className="absolute inset-0 bg-gray-300 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                    </div>
-                    <div className="flex flex-col px-1">
-                        <div>
-                            <div className="flex flex-row items-center w-full">
-                                <h6 className="flex-1 text-lg font-medium leading-none">TabBar</h6>
-                                <div className="w-5 h-5 -mt-0.5 bg-white rounded-full border-[3px] border-violet-500" />
-                            </div>
-                            <span className="text-sm text-gray-500">
-                                8:32 — 2. Componenti
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div className="space-y-4">
-                    <div className="pb-[66%] relative bg-violet-500 rounded-sm">
-                        <div className="absolute inset-0 bg-gray-300 bg-center bg-no-repeat bg-cover rounded-sm" style={{ backgroundImage: 'url(https://backmain.s3.eu-central-1.amazonaws.com/6885b941-6b5d-4b92-acf6-521a6aea4ead16328576695808403953.gif)' }} />
-                    </div>
-                    <div className="flex flex-col px-1">
-                        <div>
-                            <div className="flex flex-row items-center w-full">
-                                <h6 className="flex-1 text-lg font-medium leading-none">TabBar</h6>
-                                <div className="w-5 h-5 -mt-0.5 bg-white rounded-full border-[3px] border-violet-500" />
-                            </div>
-                            <span className="text-sm text-gray-500">
-                                8:32 — 2. Componenti
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
 
