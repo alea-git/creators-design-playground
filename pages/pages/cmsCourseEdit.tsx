@@ -6,7 +6,7 @@ export default function cmsCourseEdit() {
         <div className="w-screen min-h-screen bg-white">
             <AppBar />
 
-            <div className="border-b border-gray-200 sticky top-[4.54rem] bg-white z-10">
+            <div className="border-b border-gray-200 sticky top-[4rem] bg-white z-10">
                 <div className="flex flex-row items-center justify-between w-full py-2 mx-auto max-w-7xl">
                     <div className="flex flex-row flex-1">
                         <span className="font-medium text-violet-800 py-2.5 px-4 bg-violet-100 rounded-sm cursor-pointer">Generale</span>
@@ -17,6 +17,7 @@ export default function cmsCourseEdit() {
                     </div>
                 </div>
             </div>
+
             <div className="w-full mx-auto overflow-hidden bg-white divide-y divide-gray-200 max-w-7xl">
                 <div className="flex flex-row w-full divide-gray-200">
                     <div className="relative flex flex-col items-center justify-center flex-1 bg-violet-900">

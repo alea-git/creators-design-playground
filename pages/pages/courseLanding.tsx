@@ -33,7 +33,7 @@ export default function courseLanding() {
                 </div>
             </ContentHeader>
 
-            <div className="border-b border-gray-200 sticky top-[4.54rem] bg-white z-10">
+            <div className="border-b border-gray-200 sticky top-[4rem] bg-white z-10">
                 <div className="flex flex-row items-center justify-between w-full py-2 mx-auto max-w-7xl">
                     <div className="flex flex-row flex-1">
                         <span className="font-medium text-violet-800 py-2.5 px-4 bg-violet-100 rounded-sm cursor-pointer">Generale</span>

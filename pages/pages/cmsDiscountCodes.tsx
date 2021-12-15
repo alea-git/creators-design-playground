@@ -36,7 +36,7 @@ export default function cmsDiscountCodes() {
                     </span>
                 </div>
                 <table className="w-full">
-                    <thead className="sticky top-[83px]" style={{ boxShadow: '0px -10px 0px 0px rgba(255,255,255,1), 0px 10px 0px 0px rgba(255,255,255,1)' }}>
+                    <thead className="sticky top-[75px]" style={{ boxShadow: '0px -10px 0px 0px rgba(255,255,255,1), 0px 10px 0px 0px rgba(255,255,255,1)' }}>
                         <tr className="bg-gray-100 rounded-md">
                             <th className="px-4 py-3 font-medium text-left text-gray-900 rounded-l-sm">
                                 Codice
