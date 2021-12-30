@@ -5,17 +5,17 @@ import ContentHeader from "src/components/ContentHeader"
 export default function cmsDiscountCodes() {
     return (
         <div className="flex flex-col w-screen min-h-screen bg-white">
-            <AppBar />
+            <AppBar showMenuIcon />
 
             <ContentHeader>
                 <div className="flex flex-col items-center justify-center py-12 text-center">
                     <h1 className="text-3xl font-extrabold tracking-tight">
                         Codici sconto
                     </h1>
-                    <p className="max-w-3xl mt-4 leading-6 text-gray-500">
+                    <p className="max-w-3xl mt-4 leading-6 text-gray-400">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos quibusdam, repellendus, necessitatibus esse ad iure voluptatum totam quasi sunt officia excepturi! Reiciendis, iusto.
                     </p>
-                    <button className="py-1.5 mt-2 px-4 font-medium text-purple-800 flex flex-row items-center space-x-2 rounded">
+                    <button className="py-1.5 mt-2 px-4 font-medium text-violet-300 flex flex-row items-center space-x-2 rounded">
                         <span>
                             Crea un nuovo codice sconto
                         </span>
@@ -32,7 +32,7 @@ export default function cmsDiscountCodes() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                     <span>
-                        Search discounts by name or code...
+                        Cerca codice sconto per nome o codice...
                     </span>
                 </div>
                 <table className="w-full">
@@ -57,503 +57,41 @@ export default function cmsDiscountCodes() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
+                        {[...Array(10)].map(_ => (
+                            <tr>
+                                <td className="px-2 py-3 text-gray-900">
+                                    <span className="rounded text-sm bg-gray-100 px-2 py-1.5 font-medium">
+                                        BLACKFRIDAY
                                     </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="px-2 py-3 text-gray-900">
-                                <span className="rounded-sm text-sm bg-gray-100 px-2 py-1.5 font-medium">
-                                    BLACKFRIDAY
-                                </span>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                50%
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                <div className="flex flex-row items-center space-x-4">
-                                    <div className="w-2 h-2 rounded-full bg-violet-600" />
-                                    <span className="text-violet-800">
-                                        Attivo
-                                    </span>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                Tutti i corsi
-                            </td>
-                            <td className="px-4 py-3 text-gray-900">
-                                23
-                            </td>
-                            <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </td>
-                        </tr>
+                                </td>
+                                <td className="px-4 py-3 text-gray-900">
+                                    50%
+                                </td>
+                                <td className="px-4 py-3 text-gray-900">
+                                    <div className="flex flex-row items-center space-x-4">
+                                        <div className="w-2 h-2 rounded-full bg-violet-800" />
+                                        <span className="text-violet-900">
+                                            Attivo
+                                        </span>
+                                    </div>
+                                </td>
+                                <td className="px-4 py-3 text-gray-900">
+                                    Tutti i corsi
+                                </td>
+                                <td className="px-4 py-3 text-gray-900">
+                                    23
+                                </td>
+                                <td className="flex flex-row items-center justify-end px-2 py-3 text-gray-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                    </svg>
+                                </td>
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
             </div>
-            <div className="sticky bottom-0 flex flex-row items-center justify-between w-full px-2 py-6 mx-auto text-gray-500 bg-white max-w-7xl">
+            <div className="sticky bottom-0 flex flex-row items-center justify-between w-full px-2 py-6 mx-auto bg-white max-w-7xl">
                 <div className="flex flex-row items-center pl-2 space-x-2">
                     1 — 12 di 15
                 </div>

@@ -21,7 +21,7 @@ export default function commandMenu() {
                             <div className="flex items-center justify-center w-6 h-6 text-sm font-medium text-gray-700 uppercase bg-gray-200 rounded">
                                 K
                             </div>
-                            <span className="text-gray-600">
+                            <span className="text-gray-700">
                                 Apri pannello
                             </span>
                         </div>
@@ -32,7 +32,7 @@ export default function commandMenu() {
                             <div className="flex items-center justify-center w-6 h-6 text-sm font-medium text-gray-700 uppercase bg-gray-200 rounded">
                                 ↓
                             </div>
-                            <span className="text-gray-600">
+                            <span className="text-gray-700">
                                 Naviga
                             </span>
                         </div>
@@ -40,60 +40,60 @@ export default function commandMenu() {
                             <div className="flex items-center justify-center w-6 h-6 text-sm font-medium text-gray-700 uppercase bg-gray-200 rounded">
                                 ↵
                             </div>
-                            <span className="text-gray-600">
+                            <span className="text-gray-700">
                                 Seleziona
                             </span>
                         </div>
                     </div>
                 </div>
                 <div className="py-4">
-                    <div className="mx-4 px-4 py-2.5 flex flex-row space-x-4 items-center rounded-sm bg-purple-100">
-                        <div className="w-8 h-8 bg-purple-600 rounded-sm" />
-                        <span className="flex-1 font-medium text-purple-800">
+                    <div className="mx-4 px-4 py-2.5 flex flex-row space-x-4 items-center rounded bg-violet-100">
+                        <div className="w-8 h-8 rounded bg-violet-600" />
+                        <span className="flex-1 font-medium text-violet-800">
                             Entrate
                         </span>
-                        <div className="flex flex-row items-center space-x-2 text-purple-800">
+                        <div className="flex flex-row items-center space-x-2 text-violet-800">
                             <span className="text-sm">
                                 Seleziona
                             </span>
-                            <div className="flex items-center justify-center w-6 h-6 text-sm font-medium text-purple-600 uppercase bg-purple-200 rounded">
+                            <div className="flex items-center justify-center w-6 h-6 text-sm font-medium uppercase rounded text-violet-600 bg-violet-200">
                                 ↵
                             </div>
                         </div>
                     </div>
-                    <div className="mx-4 px-4 py-2.5 flex flex-row space-x-4 items-center rounded-sm bg-white">
-                        <div className="w-8 h-8 bg-gray-300 rounded-sm" />
-                        <span className="flex-1 text-gray-600">
+                    <div className="mx-4 px-4 py-2.5 flex flex-row space-x-4 items-center rounded bg-white">
+                        <div className="w-8 h-8 bg-gray-300 rounded" />
+                        <span className="flex-1 text-gray-700">
                             Membri
                         </span>
                     </div>
-                    <div className="mx-4 px-4 py-2.5 flex flex-row space-x-4 items-center rounded-sm bg-white">
-                        <div className="w-8 h-8 bg-gray-300 rounded-sm" />
-                        <span className="flex-1 text-gray-600">
+                    <div className="mx-4 px-4 py-2.5 flex flex-row space-x-4 items-center rounded bg-white">
+                        <div className="w-8 h-8 bg-gray-300 rounded" />
+                        <span className="flex-1 text-gray-700">
                             Piattaforma
                         </span>
                     </div>
-                    <div className="mx-4 px-4 py-2.5 flex flex-row space-x-4 items-center rounded-sm bg-white">
-                        <div className="w-8 h-8 bg-gray-300 rounded-sm" />
-                        <span className="flex-1 text-gray-600">
+                    <div className="mx-4 px-4 py-2.5 flex flex-row space-x-4 items-center rounded bg-white">
+                        <div className="w-8 h-8 bg-gray-300 rounded" />
+                        <span className="flex-1 text-gray-700">
                             Integrazioni
                         </span>
                     </div>
-                    <div className="mx-4 px-4 py-2.5 flex flex-row space-x-4 items-center rounded-sm bg-white">
-                        <div className="w-8 h-8 bg-gray-300 rounded-sm" />
-                        <span className="flex-1 text-gray-600">
+                    <div className="mx-4 px-4 py-2.5 flex flex-row space-x-4 items-center rounded bg-white">
+                        <div className="w-8 h-8 bg-gray-300 rounded" />
+                        <span className="flex-1 text-gray-700">
                             Percorsi
                         </span>
                     </div>
-                    <div className="mx-4 px-4 py-2.5 flex flex-row space-x-4 items-center rounded-sm bg-white">
-                        <div className="w-8 h-8 bg-gray-300 rounded-sm" />
-                        <span className="flex-1 text-gray-600">
+                    <div className="mx-4 px-4 py-2.5 flex flex-row space-x-4 items-center rounded bg-white">
+                        <div className="w-8 h-8 bg-gray-300 rounded" />
+                        <span className="flex-1 text-gray-700">
                             Corsi
                         </span>
                     </div>
-                    <div className="mx-4 px-4 py-2.5 flex flex-row space-x-4 items-center rounded-sm bg-white">
-                        <div className="w-8 h-8 bg-gray-300 rounded-sm" />
-                        <span className="flex-1 text-gray-600">
+                    <div className="mx-4 px-4 py-2.5 flex flex-row space-x-4 items-center rounded bg-white">
+                        <div className="w-8 h-8 bg-gray-300 rounded" />
+                        <span className="flex-1 text-gray-700">
                             Codici sconto
                         </span>
                     </div>
@@ -102,7 +102,7 @@ export default function commandMenu() {
                     <h6 className="font-medium text-gray-6ì700">
                         Hai bisogno di assistenza?
                     </h6>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-600">
                         Abbiamo una live chat sempre disponibile per i nostri Creators.
                     </p>
                 </div>

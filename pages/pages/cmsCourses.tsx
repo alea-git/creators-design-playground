@@ -12,10 +12,10 @@ export default function cmsCourses() {
                     <h1 className="text-3xl font-extrabold tracking-tight">
                         Corsi
                     </h1>
-                    <p className="max-w-3xl mt-4 leading-6 text-gray-500">
+                    <p className="max-w-3xl mt-4 leading-6 text-gray-400">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos quibusdam, repellendus, necessitatibus esse ad iure voluptatum totam quasi sunt officia excepturi! Reiciendis, iusto.
                     </p>
-                    <button className="py-1.5 mt-2 px-4 font-medium text-purple-800 flex flex-row items-center space-x-2 rounded">
+                    <button className="py-1.5 mt-2 px-4 font-medium text-violet-300 flex flex-row items-center space-x-2 rounded">
                         <span>
                             Crea un nuovo corso
                         </span>
@@ -27,195 +27,43 @@ export default function cmsCourses() {
             </ContentHeader>
 
             <div className="flex-1 w-full py-8 mx-auto bg-white rounded-md max-w-7xl">
-                <div className="flex flex-row items-center px-4 space-x-4 text-gray-500">
+                <div className="flex flex-row items-center px-4 space-x-4 text-gray-400">
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    <span> Search discounts by name or code... </span>
+                    <span>
+                        Cerca corso per nome...
+                    </span>
                 </div>
                 <div className="grid grid-cols-4 gap-16 py-8 mx-auto max-w-7xl">
-                    <div className="space-y-4">
-                        <div className="w-full pb-[66%] rounded-sm bg-gray-300" />
-                        <div className="px-1 space-y-4">
-                            <div>
+                    {[...Array(7)].map(_ => (
+                        <div className="space-y-4">
+                            <div className="w-full pb-[66%] rounded bg-gray-300" />
+                            <div className="px-1 space-y-4">
+                                <div>
+                                    <div className="flex flex-row items-center w-full">
+                                        <h6 className="flex-1 text-lg font-semibold">Flutter 2 Start</h6>
+                                        <div className="w-2 h-2 mr-2 rounded-full bg-violet-600" />
+                                    </div>
+                                    <span className="text-gray-700"> € 77.00 </span>
+                                </div>
                                 <div className="flex flex-row items-center w-full">
-                                    <h6 className="flex-1 text-lg font-semibold">Flutter 2 Start</h6>
-                                    <div className="w-2 h-2 mr-2 rounded-full bg-violet-600" />
+                                    <div className="flex flex-col flex-1">
+                                        <span className="text-sm text-gray-700"> Vendite </span>
+                                        <span className="font-medium"> 1,420 </span>
+                                    </div>
+                                    <div className="w-32 h-8 bg-gray-100 rounded" />
                                 </div>
-                                <span className="text-gray-500"> € 77.00 </span>
-                            </div>
-                            <div className="flex flex-row items-center w-full">
-                                <div className="flex flex-col flex-1">
-                                    <span className="text-sm text-gray-500"> Vendite </span>
-                                    <span className="font-medium text-gray-700"> 1,420 </span>
+                                <div className="flex flex-row items-center w-full">
+                                    <div className="flex flex-col flex-1">
+                                        <span className="text-sm text-gray-700"> Totale entrate </span>
+                                        <span className="font-medium"> € 17,890 </span>
+                                    </div>
+                                    <div className="w-32 h-8 bg-gray-100 rounded" />
                                 </div>
-                                <div className="w-32 h-8 bg-gray-100 rounded-sm" />
-                            </div>
-                            <div className="flex flex-row items-center w-full">
-                                <div className="flex flex-col flex-1">
-                                    <span className="text-sm text-gray-500"> Totale entrate </span>
-                                    <span className="font-medium text-gray-700"> € 17,890 </span>
-                                </div>
-                                <div className="w-32 h-8 bg-gray-100 rounded-sm" />
                             </div>
                         </div>
-                    </div>
-                    <div className="space-y-4">
-                        <div className="w-full pb-[66%] rounded-sm bg-gray-300" />
-                        <div className="px-1 space-y-4">
-                            <div>
-                                <div className="flex flex-row items-center w-full">
-                                    <h6 className="flex-1 text-lg font-semibold">Flutter 2 Start</h6>
-                                    <div className="w-2 h-2 mr-2 rounded-full bg-violet-600" />
-                                </div>
-                                <span className="text-gray-500"> € 77.00 </span>
-                            </div>
-                            <div className="flex flex-row items-center w-full">
-                                <div className="flex flex-col flex-1">
-                                    <span className="text-sm text-gray-500"> Vendite </span>
-                                    <span className="font-medium text-gray-700"> 1,420 </span>
-                                </div>
-                                <div className="w-32 h-8 bg-gray-100 rounded-sm" />
-                            </div>
-                            <div className="flex flex-row items-center w-full">
-                                <div className="flex flex-col flex-1">
-                                    <span className="text-sm text-gray-500"> Totale entrate </span>
-                                    <span className="font-medium text-gray-700"> € 17,890 </span>
-                                </div>
-                                <div className="w-32 h-8 bg-gray-100 rounded-sm" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-4">
-                        <div className="w-full pb-[66%] rounded-sm bg-gray-300" />
-                        <div className="px-1 space-y-4">
-                            <div>
-                                <div className="flex flex-row items-center w-full">
-                                    <h6 className="flex-1 text-lg font-semibold">Flutter 2 Start</h6>
-                                    <div className="w-2 h-2 mr-2 rounded-full bg-violet-600" />
-                                </div>
-                                <span className="text-gray-500"> € 77.00 </span>
-                            </div>
-                            <div className="flex flex-row items-center w-full">
-                                <div className="flex flex-col flex-1">
-                                    <span className="text-sm text-gray-500"> Vendite </span>
-                                    <span className="font-medium text-gray-700"> 1,420 </span>
-                                </div>
-                                <div className="w-32 h-8 bg-gray-100 rounded-sm" />
-                            </div>
-                            <div className="flex flex-row items-center w-full">
-                                <div className="flex flex-col flex-1">
-                                    <span className="text-sm text-gray-500"> Totale entrate </span>
-                                    <span className="font-medium text-gray-700"> € 17,890 </span>
-                                </div>
-                                <div className="w-32 h-8 bg-gray-100 rounded-sm" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-4">
-                        <div className="w-full pb-[66%] rounded-sm bg-gray-300" />
-                        <div className="px-1 space-y-4">
-                            <div>
-                                <div className="flex flex-row items-center w-full">
-                                    <h6 className="flex-1 text-lg font-semibold">Flutter 2 Start</h6>
-                                    <div className="w-2 h-2 mr-2 rounded-full bg-violet-600" />
-                                </div>
-                                <span className="text-gray-500"> € 77.00 </span>
-                            </div>
-                            <div className="flex flex-row items-center w-full">
-                                <div className="flex flex-col flex-1">
-                                    <span className="text-sm text-gray-500"> Vendite </span>
-                                    <span className="font-medium text-gray-700"> 1,420 </span>
-                                </div>
-                                <div className="w-32 h-8 bg-gray-100 rounded-sm" />
-                            </div>
-                            <div className="flex flex-row items-center w-full">
-                                <div className="flex flex-col flex-1">
-                                    <span className="text-sm text-gray-500"> Totale entrate </span>
-                                    <span className="font-medium text-gray-700"> € 17,890 </span>
-                                </div>
-                                <div className="w-32 h-8 bg-gray-100 rounded-sm" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-4">
-                        <div className="w-full pb-[66%] rounded-sm bg-gray-300" />
-                        <div className="px-1 space-y-4">
-                            <div>
-                                <div className="flex flex-row items-center w-full">
-                                    <h6 className="flex-1 text-lg font-semibold">Flutter 2 Start</h6>
-                                    <div className="w-2 h-2 mr-2 rounded-full bg-violet-600" />
-                                </div>
-                                <span className="text-gray-500"> € 77.00 </span>
-                            </div>
-                            <div className="flex flex-row items-center w-full">
-                                <div className="flex flex-col flex-1">
-                                    <span className="text-sm text-gray-500"> Vendite </span>
-                                    <span className="font-medium text-gray-700"> 1,420 </span>
-                                </div>
-                                <div className="w-32 h-8 bg-gray-100 rounded-sm" />
-                            </div>
-                            <div className="flex flex-row items-center w-full">
-                                <div className="flex flex-col flex-1">
-                                    <span className="text-sm text-gray-500"> Totale entrate </span>
-                                    <span className="font-medium text-gray-700"> € 17,890 </span>
-                                </div>
-                                <div className="w-32 h-8 bg-gray-100 rounded-sm" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-4">
-                        <div className="w-full pb-[66%] rounded-sm bg-gray-300" />
-                        <div className="px-1 space-y-4">
-                            <div>
-                                <div className="flex flex-row items-center w-full">
-                                    <h6 className="flex-1 text-lg font-semibold">Flutter 2 Start</h6>
-                                    <div className="w-2 h-2 mr-2 rounded-full bg-violet-600" />
-                                </div>
-                                <span className="text-gray-500"> € 77.00 </span>
-                            </div>
-                            <div className="flex flex-row items-center w-full">
-                                <div className="flex flex-col flex-1">
-                                    <span className="text-sm text-gray-500"> Vendite </span>
-                                    <span className="font-medium text-gray-700"> 1,420 </span>
-                                </div>
-                                <div className="w-32 h-8 bg-gray-100 rounded-sm" />
-                            </div>
-                            <div className="flex flex-row items-center w-full">
-                                <div className="flex flex-col flex-1">
-                                    <span className="text-sm text-gray-500"> Totale entrate </span>
-                                    <span className="font-medium text-gray-700"> € 17,890 </span>
-                                </div>
-                                <div className="w-32 h-8 bg-gray-100 rounded-sm" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-4">
-                        <div className="w-full pb-[66%] rounded-sm bg-gray-300" />
-                        <div className="px-1 space-y-4">
-                            <div>
-                                <div className="flex flex-row items-center w-full">
-                                    <h6 className="flex-1 text-lg font-semibold">Flutter 2 Start</h6>
-                                    <div className="w-2 h-2 mr-2 rounded-full bg-violet-600" />
-                                </div>
-                                <span className="text-gray-500"> € 77.00 </span>
-                            </div>
-                            <div className="flex flex-row items-center w-full">
-                                <div className="flex flex-col flex-1">
-                                    <span className="text-sm text-gray-500"> Vendite </span>
-                                    <span className="font-medium text-gray-700"> 1,420 </span>
-                                </div>
-                                <div className="w-32 h-8 bg-gray-100 rounded-sm" />
-                            </div>
-                            <div className="flex flex-row items-center w-full">
-                                <div className="flex flex-col flex-1">
-                                    <span className="text-sm text-gray-500"> Totale entrate </span>
-                                    <span className="font-medium text-gray-700"> € 17,890 </span>
-                                </div>
-                                <div className="w-32 h-8 bg-gray-100 rounded-sm" />
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>

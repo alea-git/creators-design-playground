@@ -3,7 +3,7 @@ import React from "react"
 export default function index() {
     return (
         <div className="flex flex-col items-center justify-center w-screen min-h-screen p-12 space-y-4 bg-gray-600">
-            <div className="w-full max-w-xl py-12 bg-white rounded-sm">
+            <div className="w-full max-w-xl py-12 bg-white rounded">
                 <h6 className="px-12 text-lg font-bold">
                     Pagine
                 </h6>
@@ -15,15 +15,27 @@ export default function index() {
                             href: "/pages/home"
                         },
                         {
-                            name: "Corso > Landing",
+                            name: "Home > Library",
+                            href: "/pages/homeLibrary"
+                        },
+                        {
+                            name: "Path > Landing",
+                            href: "/pages/pathLanding"
+                        },
+                        {
+                            name: "Course > Landing",
                             href: "/pages/courseLanding"
                         },
                         {
-                            name: "Corso > Overview",
+                            name: "Course > Landing (old)",
+                            href: "/pages/courseLandingOld"
+                        },
+                        {
+                            name: "Course > Overview",
                             href: "/pages/courseOverview"
                         },
                         {
-                            name: "Corso > Video > Overview",
+                            name: "Course > Video > Overview",
                             href: "/pages/courseVideoOverview"
                         },
                         {
@@ -43,8 +55,8 @@ export default function index() {
                             href: "/pages/cmsIntegrations"
                         },
                     ].map(page => (
-                        <a href={page.href} className="flex flex-row items-center w-full px-12 py-4 space-x-4 hover:bg-purple-100 hover:text-purple-700">
-                            <div className="w-2 h-2 bg-purple-700 rounded-full opacity-25"></div>
+                        <a href={page.href} className="flex flex-row items-center w-full px-12 py-4 space-x-4 hover:bg-violet-100 hover:text-violet-700">
+                            <div className="w-2 h-2 rounded-full opacity-25 bg-violet-700"></div>
                             <span>
                                 {page.name}
                             </span>
@@ -53,7 +65,7 @@ export default function index() {
                 </div>
             </div>
 
-            <div className="w-full max-w-xl py-12 bg-white rounded-sm">
+            <div className="w-full max-w-xl py-12 bg-white rounded">
                 <h6 className="px-12 text-lg font-bold">
                     Componenti
                 </h6>
@@ -65,8 +77,12 @@ export default function index() {
                             href: "/components/login"
                         },
                         {
-                            name: "Login > Choose avatar",
+                            name: "Register > Choose avatar",
                             href: "/components/registerAvatar"
+                        },
+                        {
+                            name: "Register > Success",
+                            href: "/components/registerSuccess"
                         },
                         {
                             name: "Filter dialog",
@@ -85,8 +101,8 @@ export default function index() {
                             href: "/components/checkout"
                         },
                     ].map(page => (
-                        <a href={page.href} className="flex flex-row items-center w-full px-12 py-4 space-x-4 hover:bg-purple-100 hover:text-purple-700">
-                            <div className="w-2 h-2 bg-purple-700 rounded-full opacity-25"></div>
+                        <a href={page.href} className="flex flex-row items-center w-full px-12 py-4 space-x-4 hover:bg-violet-100 hover:text-violet-700">
+                            <div className="w-2 h-2 rounded-full opacity-25 bg-violet-700"></div>
                             <span>
                                 {page.name}
                             </span>
@@ -95,7 +111,7 @@ export default function index() {
                 </div>
             </div>
 
-            <div className="w-full max-w-xl py-12 bg-white rounded-sm">
+            <div className="w-full max-w-xl py-12 bg-white rounded">
                 <h6 className="px-12 text-lg font-bold">
                     Email
                 </h6>
@@ -107,8 +123,34 @@ export default function index() {
                             href: "/email/invoice"
                         },
                     ].map(page => (
-                        <a href={page.href} className="flex flex-row items-center w-full px-12 py-4 space-x-4 hover:bg-purple-100 hover:text-purple-700">
-                            <div className="w-2 h-2 bg-purple-700 rounded-full opacity-25"></div>
+                        <a href={page.href} className="flex flex-row items-center w-full px-12 py-4 space-x-4 hover:bg-violet-100 hover:text-violet-700">
+                            <div className="w-2 h-2 rounded-full opacity-25 bg-violet-700"></div>
+                            <span>
+                                {page.name}
+                            </span>
+                        </a>
+                    ))}
+                </div>
+            </div>
+
+            <div className="w-full max-w-xl py-12 bg-white rounded">
+                <h6 className="px-12 text-lg font-bold">
+                    Custom components
+                </h6>
+
+                <div className="mt-4 divide-y divide-gray-100">
+                    {[
+                        {
+                            name: "SingleChildFocusLayout",
+                            href: "/other/SingleChildFocusLayoutScreen"
+                        },
+                        {
+                            name: "Dialog",
+                            href: "/other/dialog"
+                        },
+                    ].map(page => (
+                        <a href={page.href} className="flex flex-row items-center w-full px-12 py-4 space-x-4 hover:bg-violet-100 hover:text-violet-700">
+                            <div className="w-2 h-2 rounded-full opacity-25 bg-violet-700"></div>
                             <span>
                                 {page.name}
                             </span>

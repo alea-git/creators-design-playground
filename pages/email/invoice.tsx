@@ -2,15 +2,15 @@ import React from "react"
 
 export default function invoice() {
     return (
-        <div className="w-screen min-h-screen p-12 bg-gray-600">
+        <div className="w-screen min-h-screen p-12 bg-gray-700">
             <div className="w-full max-w-4xl mx-auto bg-white">
-                <div className="grid grid-cols-2 gap-16 px-12 py-8 bg-purple-700">
+                <div className="grid grid-cols-2 gap-16 px-12 py-8 bg-violet-800">
                     <div>
-                        <div className="w-24 h-8 bg-purple-400 rounded-sm" />
+                        <div className="w-24 h-8 rounded bg-violet-400" />
                     </div>
                     <div className="space-y-8">
                         <div className="flex flex-row items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-violet-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                             </svg>
                             <h1 className="text-2xl font-semibold text-white">
@@ -21,7 +21,7 @@ export default function invoice() {
                             <h6 className="font-medium text-white">
                                 Numero fattura:
                             </h6>
-                            <p className="text-purple-300">
+                            <p className="text-violet-200">
                                 123456
                             </p>
                         </div>
@@ -29,7 +29,7 @@ export default function invoice() {
                             <h6 className="font-medium text-white">
                                 Data:
                             </h6>
-                            <p className="text-purple-300">
+                            <p className="text-violet-200">
                                 15 Aprile, 2021
                             </p>
                         </div>
@@ -41,16 +41,16 @@ export default function invoice() {
                             <h6 className="font-medium">
                                 Dati di fatturazione:
                             </h6>
-                            <p className="text-gray-500">
+                            <p className="text-gray-700">
                                 Timmy Turner
                             </p>
-                            <p className="text-gray-500">
+                            <p className="text-gray-700">
                                 957 North Street
                             </p>
-                            <p className="text-gray-500">
+                            <p className="text-gray-700">
                                 Londra
                             </p>
-                            <p className="text-gray-500">
+                            <p className="text-gray-700">
                                 United Kingdom
                             </p>
                         </div>
@@ -58,7 +58,7 @@ export default function invoice() {
                             <h6 className="font-medium">
                                 Partita IVA:
                             </h6>
-                            <p className="text-gray-500">
+                            <p className="text-gray-700">
                                 1345 67 678933
                             </p>
                         </div>
@@ -68,16 +68,16 @@ export default function invoice() {
                             <h6 className="font-medium">
                                 Fattura da:
                             </h6>
-                            <p className="text-gray-500">
+                            <p className="text-gray-700">
                                 Fudeo
                             </p>
-                            <p className="text-gray-500">
+                            <p className="text-gray-700">
                                 Via pastrengo
                             </p>
-                            <p className="text-gray-500">
+                            <p className="text-gray-700">
                                 Moncalieri
                             </p>
-                            <p className="text-gray-500">
+                            <p className="text-gray-700">
                                 Italia
                             </p>
                         </div>
@@ -85,7 +85,7 @@ export default function invoice() {
                             <h6 className="font-medium">
                                 Partita IVA:
                             </h6>
-                            <p className="text-gray-500">
+                            <p className="text-gray-700">
                                 1345 67 678933
                             </p>
                         </div>
@@ -104,7 +104,7 @@ export default function invoice() {
                         Flutter 2 Start
                     </p>
                     <div className="flex-1 mx-4 border-b border-gray-200 border-dashed" />
-                    <p className="text-right text-gray-600">
+                    <p className="text-right text-gray-700">
                         €77.00
                     </p>
                 </div>
@@ -113,7 +113,7 @@ export default function invoice() {
                         Flutter Advanced
                     </p>
                     <div className="flex-1 mx-4 border-b border-gray-200 border-dashed" />
-                    <p className="text-right text-gray-600">
+                    <p className="text-right text-gray-700">
                         €97.00
                     </p>
                 </div>
@@ -122,7 +122,7 @@ export default function invoice() {
                         Flutter Focus
                     </p>
                     <div className="flex-1 mx-4 border-b border-gray-200 border-dashed" />
-                    <p className="text-right text-gray-600">
+                    <p className="text-right text-gray-700">
                         €59.00
                     </p>
                 </div>
@@ -134,7 +134,7 @@ export default function invoice() {
                             <p>
                                 Sottotale
                             </p>
-                            <p className="text-right text-gray-600">
+                            <p className="text-right text-gray-700">
                                 €150.00
                             </p>
                         </div>
@@ -143,9 +143,9 @@ export default function invoice() {
                                 <span className="leading-none">
                                     Codice sconto
                                 </span>
-                                <span className="text-sm text-gray-400">(BLACKFRIDAY)</span>
+                                <span className="text-sm text-gray-700">(BLACKFRIDAY)</span>
                             </div>
-                            <p className="text-right text-gray-600">
+                            <p className="text-right text-gray-700">
                                 - €20.00
                             </p>
                         </div>
@@ -153,7 +153,7 @@ export default function invoice() {
                             <p>
                                 IVA
                             </p>
-                            <p className="text-right text-gray-600">
+                            <p className="text-right text-gray-700">
                                 €30.00
                             </p>
                         </div>
@@ -175,7 +175,7 @@ export default function invoice() {
                             <h6 className="font-medium">
                                 Pagamento:
                             </h6>
-                            <p className="text-gray-500">
+                            <p className="text-gray-700">
                                 € 160.00 via MasterCard **** 1234
                             </p>
                         </div>
@@ -186,7 +186,7 @@ export default function invoice() {
                         <span>
                             Grazie per aver comprato da Fudeo
                         </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                         </svg>
                     </div>
@@ -194,7 +194,7 @@ export default function invoice() {
                         <p className="font-medium">
                             Bisogno di aiuto?
                         </p>
-                        <p className="text-gray-500">
+                        <p className="text-gray-700">
                             info@fudeo.it
                         </p>
                     </div>

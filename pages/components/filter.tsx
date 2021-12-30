@@ -5,11 +5,11 @@ export default function filter() {
         <div className="flex items-center justify-center w-screen min-h-screen p-12 bg-gray-600">
             <div className="flex flex-col shadow-lg">
                 <div className="inline-block w-16 ml-4 overflow-hidden">
-                    <div className="h-5 w-5 bg-gray-100 rounded-sm -mb-0.5 rotate-45 transform origin-bottom-left" />
+                    <div className="h-5 w-5 bg-gray-100 rounded -mb-0.5 rotate-45 transform origin-bottom-left" />
                 </div>
                 <div className="w-[48rem] bg-white rounded-md flex flex-row items-stretch overflow-hidden">
                     <div className="w-56 px-3 py-5 space-y-1 bg-gray-100">
-                        <div className="flex flex-row items-center px-2 py-2 space-x-2 border-2 rounded-sm cursor-pointer border-violet-600 bg-violet-100 text-violet-600">
+                        <div className="flex flex-row items-center px-2 py-2 space-x-2 border rounded cursor-pointer border-violet-700 bg-violet-100 text-violet-700">
                             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
@@ -36,7 +36,7 @@ export default function filter() {
                                 Valore
                             </span>
                         </div>
-                        <div className="px-2 py-2 border-2 border-transparent cursor-pointer text-violet-600">
+                        <div className="px-2 py-2 border-2 border-transparent cursor-pointer text-violet-700">
                             <div className="flex flex-row items-center space-x-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -44,9 +44,9 @@ export default function filter() {
                                 <span className="flex-1 font-medium">
                                     Account
                                 </span>
-                                <div className="w-1 h-1 rounded-full bg-violet-600" />
+                                <div className="w-1 h-1 rounded-full bg-violet-700" />
                             </div>
-                            <p className="text-xs ml-[1.75rem] text-violet-600">
+                            <p className="text-xs ml-[1.75rem] text-violet-700">
                                 5 corsi selezionati
                             </p>
                         </div>
@@ -77,10 +77,10 @@ export default function filter() {
                     </div>
                     <div className="flex-1 px-8 py-8">
                         <div className="flex flex-col space-y-2">
-                            <span className="text-sm font-medium text-gray-500">
+                            <span className="text-sm font-medium text-gray-700">
                                 Mostra le entrate
                             </span>
-                            <div className="w-full border border-gray-200 rounded-sm bg-gray-50">
+                            <div className="w-full border border-gray-200 rounded bg-gray-50">
                                 <div className="flex flex-row items-center h-10 p-2 space-x-4 text-gray-900">
                                     <span className="flex-1">
                                         Sempre
@@ -94,10 +94,10 @@ export default function filter() {
                         <div className="-mx-8 h-[1px] bg-gray-200 my-8" />
                         <div className="flex flex-row items-end space-x-4">
                             <div className="flex-1 space-y-2">
-                                <span className="text-sm font-medium text-gray-500">
+                                <span className="text-sm font-medium text-gray-700">
                                     Da
                                 </span>
-                                <div className="w-full border border-gray-200 rounded-sm bg-gray-50">
+                                <div className="w-full border border-gray-200 rounded bg-gray-50">
                                     <div className="flex flex-row items-center h-10 p-2 space-x-4 text-gray-900">
                                         Gen 1, 2017
                                     </div>
@@ -107,10 +107,10 @@ export default function filter() {
                                 —
                             </span>
                             <div className="flex-1 space-y-2">
-                                <span className="text-sm font-medium text-gray-500">
+                                <span className="text-sm font-medium text-gray-700">
                                     A
                                 </span>
-                                <div className="w-full border border-gray-200 rounded-sm bg-gray-50">
+                                <div className="w-full border border-gray-200 rounded bg-gray-50">
                                     <div className="flex flex-row items-center h-10 p-2 space-x-4 text-gray-900">
                                         Oggi
                                     </div>
@@ -129,18 +129,18 @@ export default function filter() {
                                     <div />
                                 </div>
                                 <div className="grid grid-cols-3 mt-2">
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Gen</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Feb</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Mar</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Apr</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Mag</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Giu</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Lug</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Ago</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Set</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Ott</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Nov</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Dic</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Gen</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Feb</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Mar</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Apr</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Mag</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Giu</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Lug</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Ago</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Set</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Ott</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Nov</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Dic</span>
                                 </div>
                             </div>
                             <div>
@@ -150,18 +150,18 @@ export default function filter() {
                                     </span>
                                 </div>
                                 <div className="grid grid-cols-3 mt-2">
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Gen</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Feb</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Mar</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Apr</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Mag</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Giu</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Lug</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Ago</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Set</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Ott</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Nov</span>
-                                    <span className="p-2 text-sm text-center text-gray-500 rounded-sm cursor-pointer hover:bg-gray-100">Dic</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Gen</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Feb</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Mar</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Apr</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Mag</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Giu</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Lug</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Ago</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Set</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Ott</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Nov</span>
+                                    <span className="p-2 text-sm text-center text-gray-700 rounded cursor-pointer hover:bg-gray-100">Dic</span>
                                 </div>
                             </div>
                         </div>

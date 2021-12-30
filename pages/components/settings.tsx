@@ -7,76 +7,76 @@ export default function settings() {
                 <div className="sticky top-0 flex flex-col flex-shrink-0 p-2 bg-gray-100 w-60">
                     <div className="flex flex-row items-center p-2 space-x-2">
                         <div className="w-8 h-8 bg-gray-300 rounded-full" />
-                        <span className="text-gray-600">
+                        <span className="font-medium text-gray-900">
                             Gabriel Gatu
                         </span>
                     </div>
                     <div className="w-full h-[1px] bg-gray-200 mt-2 mb-4" />
-                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-600 bg-gray-200 rounded-sm">
-                        <div className="w-5 h-5 bg-gray-300 rounded-sm" />
+                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-700 bg-gray-200 rounded">
+                        <div className="w-5 h-5 bg-gray-300 rounded" />
                         <span>
                             Il mio account
                         </span>
                     </div>
-                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-600">
-                        <div className="w-5 h-5 bg-gray-300 rounded-sm" />
+                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-700">
+                        <div className="w-5 h-5 bg-gray-300 rounded" />
                         <span>
                             Referral
                         </span>
                     </div>
-                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-600">
-                        <div className="w-5 h-5 bg-gray-300 rounded-sm" />
+                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-700">
+                        <div className="w-5 h-5 bg-gray-300 rounded" />
                         <span>
                             Avatar
                         </span>
                     </div>
-                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-600">
-                        <div className="w-5 h-5 bg-gray-300 rounded-sm" />
+                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-700">
+                        <div className="w-5 h-5 bg-gray-300 rounded" />
                         <span>
                             Email
                         </span>
                     </div>
-                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-600">
-                        <div className="w-5 h-5 bg-gray-300 rounded-sm" />
+                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-700">
+                        <div className="w-5 h-5 bg-gray-300 rounded" />
                         <span>
                             Password
                         </span>
                     </div>
-                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-600">
-                        <div className="w-5 h-5 bg-gray-300 rounded-sm" />
+                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-700">
+                        <div className="w-5 h-5 bg-gray-300 rounded" />
                         <span>
                             Shortcuts
                         </span>
                     </div>
-                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-600">
-                        <div className="w-5 h-5 bg-gray-300 rounded-sm" />
+                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-700">
+                        <div className="w-5 h-5 bg-gray-300 rounded" />
                         <span>
                             App mobile
                         </span>
                     </div>
                     <div className="w-full h-[1px] bg-gray-200 my-4" />
-                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-500">
+                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-600">
                         <span>
                             Supporto e Feedback
                         </span>
                     </div>
-                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-500">
+                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-600">
                         <span>
                             Termini e privacy
                         </span>
                     </div>
-                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-500">
+                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-600">
                         <span>
                             Cancella account
                         </span>
                     </div>
-                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-500">
+                    <div className="flex flex-row items-center p-2 space-x-2 text-gray-600">
                         <span>
                             Logout
                         </span>
                     </div>
                     <div className="flex-1" />
-                    <p className="p-2 text-xs text-gray-500">
+                    <p className="p-2 text-xs text-gray-600">
                         Powered by <a href="/" className="font-medium hover:text-violet-600">Creators.so</a>
                     </p>
                 </div>
@@ -91,8 +91,8 @@ export default function settings() {
                             <span className="font-medium text-gray-900">
                                 Nome
                             </span>
-                            <div className="w-full border border-gray-200 rounded-sm bg-gray-50">
-                                <div className="flex flex-row items-center h-10 p-2 space-x-4 text-gray-500">
+                            <div className="w-full border border-gray-200 rounded bg-gray-50">
+                                <div className="flex flex-row items-center h-10 p-2 space-x-4 text-gray-400">
                                     user@email.com
                                 </div>
                             </div>
@@ -102,10 +102,10 @@ export default function settings() {
                             <span className="font-medium text-gray-900">
                                 Codice di invito
                             </span>
-                            <p className="text-sm leading-5 text-gray-500">
+                            <p className="text-sm leading-5 text-gray-600">
                                 Share this secret link to invite people to this workspace. Only admins can see this. You can reset the link to generate a new invite link.
                             </p>
-                            <div className="flex flex-row w-full space-x-4 overflow-hidden border border-gray-200 rounded-sm bg-gray-50">
+                            <div className="flex flex-row w-full space-x-4 overflow-hidden border border-gray-200 rounded bg-gray-50">
                                 <div className="flex flex-row items-center flex-1 h-10 p-2 space-x-4 text-gray-900 truncate">
                                     https://www.notion.so/invite/912aaefd35c37753c11ce69473204c8d69af17dc
                                 </div>
@@ -119,10 +119,10 @@ export default function settings() {
                             <span className="font-medium text-gray-900">
                                 Membri
                             </span>
-                            <p className="text-sm leading-5 text-gray-500">
+                            <p className="text-sm leading-5 text-gray-600">
                                 Manage members here, or set up a domain, so everyone with allowed email domains can join the workspace automatically.
                             </p>
-                            <div className="flex flex-row w-full space-x-4 overflow-hidden border border-gray-200 rounded-sm bg-gray-50">
+                            <div className="flex flex-row w-full space-x-4 overflow-hidden border border-gray-200 rounded bg-gray-50">
                                 <div className="flex flex-row items-center flex-1 h-10 p-2 space-x-4 text-gray-500 truncate">
                                     Inserisci l'email e manda un invito
                                 </div>
@@ -132,34 +132,34 @@ export default function settings() {
                             </div>
                             <div className="w-full py-4 divide-y divide-gray-200">
                                 <div className="flex flex-row items-center py-2 space-x-4">
-                                    <div className="flex items-center justify-center w-8 h-8 text-gray-600 border border-gray-600 rounded-full">
+                                    <div className="flex items-center justify-center w-8 h-8 text-gray-700 border border-gray-600 rounded-full">
                                         B
                                     </div>
                                     <div className="flex flex-col flex-1">
                                         <span className="leading-none">
                                             Bertand
                                         </span>
-                                        <span className="text-sm text-gray-500">
+                                        <span className="text-sm text-gray-600">
                                             bertand@gmail.com
                                         </span>
                                     </div>
-                                    <span className="text-green-600">
+                                    <span className="text-emerald-700">
                                         + € 20.00
                                     </span>
                                 </div>
                                 <div className="flex flex-row items-center py-2 space-x-4">
-                                    <div className="flex items-center justify-center w-8 h-8 text-gray-600 border border-gray-600 rounded-full">
+                                    <div className="flex items-center justify-center w-8 h-8 text-gray-700 border border-gray-600 rounded-full">
                                         A
                                     </div>
                                     <div className="flex flex-col flex-1">
                                         <span className="leading-none">
                                             Alice
                                         </span>
-                                        <span className="text-sm text-gray-500">
+                                        <span className="text-sm text-gray-600">
                                             alice@gmail.com
                                         </span>
                                     </div>
-                                    <span className="text-green-600">
+                                    <span className="text-emerald-700">
                                         Invitata
                                     </span>
                                 </div>
@@ -167,19 +167,19 @@ export default function settings() {
                         </div>
                     </div>
                     {/*<div class="sticky bottom-0 h-[4.5rem] left-0 right-0 border-t px-12 items-center flex flex-row space-x-2 bg-violet-600">
-  <button class="py-1.5 shadow-sm px-4 font-medium text-white bg-violet-400 rounded-sm">
+  <button class="py-1.5 shadow-sm px-4 font-medium text-white bg-violet-400 rounded">
     Aggiorna
   </button>
 
-  <button class="py-1.5 shadow-sm px-4 font-medium text-violet-100 bg-transparent border border-violet-400 rounded-sm">
+  <button class="py-1.5 shadow-sm px-4 font-medium text-violet-100 bg-transparent border border-violet-400 rounded">
     Cancella
   </button>
 </div>*/}
                     <div className="sticky bottom-0 h-[4.5rem] left-0 right-0 border-t px-12 items-center flex flex-row space-x-2 bg-white">
-                        <button className="py-1.5 shadow-sm px-4 font-medium text-white bg-violet-600 rounded-sm">
+                        <button className="py-1.5 shadow-sm px-4 font-medium text-white bg-violet-600 rounded">
                             Aggiorna
                         </button>
-                        <button className="py-1.5 shadow-sm px-4 font-medium text-gray-600 bg-transparent border border-gray-300 rounded-sm">
+                        <button className="py-1.5 shadow-sm px-4 font-medium text-gray-700 bg-transparent border border-gray-300 rounded">
                             Cancella
                         </button>
                     </div>
