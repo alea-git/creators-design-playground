@@ -145,12 +145,12 @@ export default function homeLibrary() {
                         <div className="h-full bg-black rounded aspect-square"></div>
 
                         <div className="w-full max-w-2xl">
-                            <div className="flex flex-row items-baseline">
+                            <div className="flex flex-row items-center">
                                 <h6 className="flex-1 text-2xl font-bold">
                                     Flutter 2 Start
                                 </h6>
 
-                                <div className="flex flex-row items-center mt-4 space-x-1">
+                                <div className="flex flex-row items-center space-x-1">
                                     <span className="px-3 py-1 text-sm font-medium rounded text-violet-900 bg-violet-100">
                                         Anteprima
                                     </span>
@@ -163,11 +163,11 @@ export default function homeLibrary() {
                                 </div>
                             </div>
 
-                            <p className="mt-4 text-gray-700">
+                            <p className="mt-6 text-gray-700">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minus assumenda cupiditate mollitia repudiandae culpa ab possimus veniam officiis eum.
                             </p>
 
-                            <div className="w-full h-1 mt-4 bg-gray-300 rounded">
+                            <div className="w-full h-1 mt-6 bg-gray-300 rounded">
                                 <div className="w-2/3 h-1 rounded bg-violet-600"></div>
                             </div>
 
