@@ -1,5 +1,6 @@
 import React from "react"
 import AppBar from "src/components/AppBar"
+import { ContentHeaderBackground } from "src/components/ContentHeader"
 
 export default function courseVideoOverview() {
     return (
@@ -7,20 +8,22 @@ export default function courseVideoOverview() {
             <AppBar title="Flutter 2 Start" />
 
             <div className="relative w-full">
-                <div className="absolute top-0 left-0 right-0 bg-gray-900">
-                    <div className="flex flex-row mx-auto space-x-12 max-w-7xl">
+                <div className="absolute top-0 left-0 right-0">
+                    <ContentHeaderBackground>
+                        <div className="flex flex-row mx-auto space-x-12 max-w-7xl">
 
-                        <div className="flex-1 py-12">
-                            <div className="w-full aspect-video"></div>
+                            <div className="flex-1 py-12">
+                                <div className="w-full aspect-video"></div>
+                            </div>
+
+
+                            <div className="w-full max-w-sm"></div>
                         </div>
-
-
-                        <div className="w-full max-w-sm"></div>
-                    </div>
+                    </ContentHeaderBackground>
                 </div>
 
                 <div className="relative flex flex-row items-stretch mx-auto space-x-12 max-w-7xl">
-                    <div className="flex-1 py-12 bg-gray-900">
+                    <div className="flex-1 py-12">
                         <div className="w-full bg-gray-500 rounded aspect-video"></div>
                     </div>
 
@@ -78,34 +81,20 @@ export default function courseVideoOverview() {
 
             <div className="flex flex-row mx-auto space-x-12 max-w-7xl">
                 <div className="flex-1 pt-12">
-                    <div className="flex flex-row items-start">
-                        <div className="flex-1">
-                            <h1 className="text-3xl font-extrabold">Installazione</h1>
-                            <h6 className="mt-1 text-sm font-medium text-gray-700">
-                                1. Introduzione
-                            </h6>
-                        </div>
-                    </div>
-
                     <div className="max-w-3xl">
+                        <div className="flex flex-row items-start">
+                            <div className="flex-1">
+                                <h1 className="text-3xl font-extrabold">Installazione</h1>
+                                <h6 className="mt-1 text-sm font-medium text-gray-700">
+                                    1. Introduzione
+                                </h6>
+                            </div>
+                        </div>
+
                         <p className="mt-4 text-gray-700">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis enim
                             quis ut quod dolore, officiis deleniti, et cumque quaerat totam.
                         </p>
-
-                        <div className="mt-8">
-                            <div className="w-full h-1 bg-gray-300 rounded">
-                                <div className="w-1/3 h-1 bg-gray-900 rounded"></div>
-                            </div>
-
-                            <div className="flex flex-row items-center mt-2 space-x-2 text-gray-700">
-                                <span className="font-medium text-gray-900">35% Completato</span>
-
-                                <span>-</span>
-
-                                <span>7 ore rimaste</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
