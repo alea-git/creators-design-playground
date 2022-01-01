@@ -146,25 +146,29 @@ export default function checkout() {
                     <h3 className="font-medium">
                         Riepilogo ordine
                     </h3>
-                    <ul className="mt-4">
-                        <li className="text-gray-700 list-disc list-inside">
-                            Dart Begin
-                        </li>
-                        <li className="text-gray-700 list-disc list-inside">
-                            Flutter 2 Start
-                        </li>
-                        <li className="text-gray-700 list-disc list-inside">
-                            Flutter Advanced
-                        </li>
-                        <li className="text-gray-700 list-disc list-inside">
-                            Flutter Focus
-                        </li>
-                        <li className="text-gray-700 list-disc list-inside">
-                            Flutter Pro
-                        </li>
-                    </ul>
-                    <div className="h-[1px] w-full bg-gray-300 mt-4" />
-                    <div className="flex flex-row items-center justify-between py-1 mt-4 space-x-4">
+
+                    <div className="hidden">
+                        <ul className="mt-4">
+                            <li className="text-gray-700 list-disc list-inside">
+                                Dart Begin
+                            </li>
+                            <li className="text-gray-700 list-disc list-inside">
+                                Flutter 2 Start
+                            </li>
+                            <li className="text-gray-700 list-disc list-inside">
+                                Flutter Advanced
+                            </li>
+                            <li className="text-gray-700 list-disc list-inside">
+                                Flutter Focus
+                            </li>
+                            <li className="text-gray-700 list-disc list-inside">
+                                Flutter Pro
+                            </li>
+                        </ul>
+                        <div className="h-[1px] w-full bg-gray-300 mt-4" />
+                    </div>
+
+                    <div className="flex flex-row items-center justify-between py-1 mt-2 space-x-4">
                         <span className="text-gray-700">
                             Sottotale
                         </span>

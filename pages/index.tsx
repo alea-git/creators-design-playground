@@ -141,12 +141,16 @@ export default function index() {
                 <div className="mt-4 divide-y divide-gray-100">
                     {[
                         {
-                            name: "SingleChildFocusLayout",
-                            href: "/other/SingleChildFocusLayoutScreen"
+                            name: "TabBar",
+                            href: "/other/TabBar"
                         },
                         {
                             name: "Dialog",
                             href: "/other/dialog"
+                        },
+                        {
+                            name: "SingleChildFocusLayout",
+                            href: "/other/SingleChildFocusLayoutScreen"
                         },
                     ].map(page => (
                         <a href={page.href} className="flex flex-row items-center w-full px-12 py-4 space-x-4 hover:bg-violet-100 hover:text-violet-700">
