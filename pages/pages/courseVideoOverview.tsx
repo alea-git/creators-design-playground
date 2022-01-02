@@ -27,7 +27,23 @@ export default function courseVideoOverview() {
                         <div className="w-full bg-gray-500 rounded aspect-video"></div>
                     </div>
 
-                    <div className="flex flex-col w-full max-w-sm overflow-hidden text-gray-900 bg-white border border-b-0 border-gray-900">
+                    <div className="flex flex-col w-full max-w-sm overflow-hidden text-gray-900 border border-b-0 border-gray-900 bg-gray-50">
+                        <div className="px-6 py-4">
+                            <h2 className="text-xl font-bold">
+                                Flutter 2 Start
+                            </h2>
+
+                            <div className="w-full h-1 mt-4 bg-gray-300 rounded">
+                                <div className="w-1/5 h-1 bg-gray-700 rounded"></div>
+                            </div>
+
+                            <div className="flex flex-row items-center justify-between w-full mt-2">
+                                <div className="flex flex-row items-center w-full space-x-2 text-sm text-gray-600">
+                                    Sei al 20% del corso - 10 ore rimaste
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="relative flex-1">
                             <div className="absolute inset-0 overflow-y-auto scrollbar-hidden">
                                 {[...Array(10)].map((_) => (
@@ -98,18 +114,8 @@ export default function courseVideoOverview() {
                     </div>
                 </div>
 
-                <div className="w-full max-w-sm border-t border-gray-100">
-                    <div className="px-6 py-4 border border-t-0 border-gray-300">
-                        <div className="w-full h-1 bg-gray-300 rounded">
-                            <div className="w-1/5 h-1 bg-gray-700 rounded"></div>
-                        </div>
+                <div className="w-full max-w-sm">
 
-                        <div className="flex flex-row items-center justify-between w-full mt-2">
-                            <div className="flex flex-row items-center w-full space-x-2 text-sm text-gray-600">
-                                Sei al 20% del corso - 10 ore rimaste
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -117,7 +123,7 @@ export default function courseVideoOverview() {
 
             <div className="flex flex-row w-full mx-auto space-x-16 max-w-7xl">
                 <div className="w-full max-w-sm">
-                    <div className="w-full">
+                    <div className="w-full max-w-xs">
                         <h2 className="text-2xl font-extrabold">Domande e risposte</h2>
 
                         <p className="mt-4 text-sm text-gray-600">
@@ -126,7 +132,7 @@ export default function courseVideoOverview() {
                             libero magnam accusamus ipsum voluptas eos quae.
                         </p>
 
-                        <button className="w-full h-12 px-4 mt-8 font-medium text-gray-900 bg-transparent border border-gray-400 rounded shadow-sm">
+                        <button className="w-full h-12 px-4 mt-6 font-medium text-gray-900 bg-transparent border border-gray-400 rounded shadow-sm">
                             Hai una domanda?
                         </button>
                     </div>

@@ -57,30 +57,35 @@ export default function courseOverview() {
                 </div>
             </ContentHeader>
 
-            <div className="flex flex-row items-start w-full mx-auto space-x-16 max-w-7xl">
-                <div className="sticky py-8 w-80 top-16">
-                    <h2 className="text-xl font-semibold">
-                        Sezioni del corso
-                    </h2>
+            <div className="flex flex-row items-stretch w-full mx-auto space-x-12 max-w-7xl">
+                <div className="border-r border-gray-200 w-80">
+                    <div className="sticky py-8 top-16">
+                        <h2 className="text-xl font-semibold">
+                            Sezioni del corso
+                        </h2>
 
-                    <div className="flex flex-col mt-4">
-                        {[
-                            "1. Introduzione",
-                            "2. Componenti",
-                            "3. Layout",
-                            "4. Pagine scrollabili",
-                            "5. Form",
-                            "6. Componenti di navigazione",
-                            "7. HTTP & JSON",
-                        ].map(sectionName => (
-                            <a href="" className="flex flex-row items-center py-2 space-x-4 text-gray-500 rounded cursor-pointer group">
-                                <div className="w-2 h-2 bg-gray-300 rounded-full group-hover:bg-violet-700"></div>
 
-                                <span className="font-medium group-hover:text-violet-700">
-                                    {sectionName}
-                                </span>
-                            </a>
-                        ))}
+
+                        <div className="flex flex-col mt-4">
+                            {[
+                                "1. Introduzione",
+                                "2. Componenti",
+                                "3. Layout",
+                                "4. Pagine scrollabili",
+                                "5. Form",
+                                "6. Componenti di navigazione",
+                                "7. HTTP & JSON",
+                            ].map((sectionName, index) => (
+                                <a href="" className={classNames("flex flex-row items-center py-3 space-x-4 text-gray-600 border-r-2 cursor-pointer", {
+                                    "border-violet-700 text-violet-700": index === 0,
+                                    "border-transparent": index !== 0,
+                                })}>
+                                    <span className="font-medium">
+                                        {sectionName}
+                                    </span>
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 </div>
 
