@@ -34,7 +34,7 @@ export default function courseVideoOverview() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col w-full max-w-sm overflow-hidden text-gray-900 border border-b-0 border-gray-900 bg-gray-50">
+                    <div className="flex flex-col w-full max-w-sm overflow-hidden text-gray-900 bg-gray-50">
                         <div className="px-6 py-4">
                             <div className="flex flex-row items-center">
                                 <h2 className="flex-1 text-lg font-bold">
