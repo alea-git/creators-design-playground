@@ -29,16 +29,16 @@ export default function courseVideoOverview() {
 
                     <div className="flex flex-col w-full max-w-sm overflow-hidden text-gray-900 border border-b-0 border-gray-900 bg-gray-50">
                         <div className="px-6 py-4">
-                            <h2 className="text-xl font-bold">
+                            <h2 className="text-lg font-bold">
                                 Flutter 2 Start
                             </h2>
 
-                            <div className="w-full h-1 mt-4 bg-gray-300 rounded">
+                            <div className="w-full h-1 mt-2 bg-gray-300 rounded">
                                 <div className="w-1/5 h-1 bg-gray-700 rounded"></div>
                             </div>
 
                             <div className="flex flex-row items-center justify-between w-full mt-2">
-                                <div className="flex flex-row items-center w-full space-x-2 text-sm text-gray-600">
+                                <div className="flex flex-row items-center w-full space-x-2 text-xs text-gray-600">
                                     Sei al 20% del corso - 10 ore rimaste
                                 </div>
                             </div>

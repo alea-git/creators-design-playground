@@ -87,12 +87,15 @@ export default function homeLibrary() {
             </div>
         </ContentHeaderBackground>
 
-        <div className="relative w-full py-12 mx-auto divide-y divide-gray-200 max-w-7xl"> {
-            [...Array(8)].map(_ => (<div className="flex flex-row items-center py-6 space-x-8 h-60">
-                <div className="h-full bg-black rounded aspect-square"></div>
-                <div className="w-full max-w-2xl">
+        <div className="relative w-full py-8 mx-auto divide-y divide-gray-200 max-w-7xl"> {
+            [...Array(8)].map(_ => (<div className="flex flex-row items-center h-56 max-w-5xl py-6 mx-auto space-x-8">
+                <div className="h-full bg-center bg-no-repeat bg-cover rounded aspect-square" style={{
+                    backgroundImage: "url(https://backmain.s3.eu-central-1.amazonaws.com/3bcbe21c-1303-4aaf-a510-91769cb017fb17825647590982822154.png)"
+                }} />
+
+                <div className="flex-1">
                     <div className="flex flex-row items-center">
-                        <h6 className="flex-1 text-2xl font-bold">
+                        <h6 className="flex-1 text-xl font-semibold">
                             Flutter 2 Start
                         </h6>
                         <div className="flex flex-row items-center space-x-1">
@@ -107,7 +110,8 @@ export default function homeLibrary() {
                             </span>
                         </div>
                     </div>
-                    <p className="mt-6 text-gray-700">
+
+                    <p className="mt-4 text-gray-700">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minus assumenda cupiditate mollitia repudiandae culpa ab possimus veniam officiis eum.
                     </p>
                     <div className="w-full h-1 mt-6 bg-gray-300 rounded">
@@ -125,6 +129,10 @@ export default function homeLibrary() {
                         </span>
                     </div>
                 </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
             </div>))
         } </div>
     </div>)
