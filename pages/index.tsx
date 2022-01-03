@@ -31,6 +31,10 @@ export default function index() {
                             href: "/pages/courseLandingOld"
                         },
                         {
+                            name: "Path > Overview",
+                            href: "/pages/pathOverview"
+                        },
+                        {
                             name: "Course > Overview",
                             href: "/pages/courseOverview"
                         },

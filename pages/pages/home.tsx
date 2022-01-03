@@ -1,3 +1,4 @@
+import classNames from "classnames"
 import { motion } from "framer-motion"
 import React from "react"
 import AppBar from "src/components/AppBar"
@@ -48,7 +49,7 @@ export default function home() {
                                 Stai seguendo:
                             </h6>
 
-                            <h1 className="mt-4 text-4xl font-extrabold">
+                            <h1 className="mt-4 text-3xl font-extrabold">
                                 Flutter & Firebase
                             </h1>
 
@@ -163,11 +164,11 @@ export default function home() {
                                     Corsi inclusi nel percorso
                                 </h6>
 
-                                <p className="mt-4 text-gray-700">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consequatur labore distinctio quas suscipit.
+                                <p className="mt-1 text-sm text-gray-700">
+                                    Acquistando questo percorso sbloccherai tutti e 5 i corsi mostrati sotto.
                                 </p>
 
-                                <div className="mt-8 divide-y divide-gray-200">
+                                <div className="mt-8">
                                     {[
                                         {
                                             name: "Dart Begin",
@@ -189,23 +190,43 @@ export default function home() {
                                             name: "Flutter 2 Pro",
                                             infos: "7 ore",
                                         },
-                                    ].map(course => (
-                                        <div className="flex flex-row items-center py-2 space-x-4">
-                                            <div className="h-12 bg-gray-300 rounded aspect-square"></div>
-
-                                            <div className="flex-1">
-                                                <h6 className="font-medium">
-                                                    {course.name}
-                                                </h6>
-
-                                                <p className="text-sm text-gray-700">
-                                                    {course.infos}
-                                                </p>
+                                    ].map((course, index) => (
+                                        <div className="flex flex-row items-stretch space-x-4">
+                                            <div className="flex flex-col items-center">
+                                                <div className={classNames("flex-1 w-[1px]",
+                                                    index === 0
+                                                        ? "bg-transparent"
+                                                        : "bg-gray-300",
+                                                )} />
+                                                <div className="w-3 h-3 my-2 bg-gray-300 rounded-full" />
+                                                <div className={classNames("flex-1 w-[1px]",
+                                                    index === 4
+                                                        ? "bg-transparent"
+                                                        : "bg-gray-300",
+                                                )} />
                                             </div>
 
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                                            </svg>
+                                            <div className={classNames("flex flex-row items-center flex-1 py-2 space-x-4", {
+                                                "border-b border-gray-200": index !== 4,
+                                            })}>
+                                                <div className="h-12 bg-center bg-no-repeat bg-cover rounded aspect-square" style={{
+                                                    backgroundImage: "url(https://backmain.s3.eu-central-1.amazonaws.com/06751de3-c345-47fd-bc37-2a44ac9ab4177244218256204182333.jpg)",
+                                                }}></div>
+
+                                                <div className="flex-1">
+                                                    <h6 className="font-medium">
+                                                        {course.name}
+                                                    </h6>
+
+                                                    <p className="text-sm text-gray-700">
+                                                        {course.infos}
+                                                    </p>
+                                                </div>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                                </svg>
+                                            </div>
                                         </div>
                                     ))}
                                 </div>
@@ -214,181 +235,6 @@ export default function home() {
                     </div>
                 ))}
             </div>
-
-            {/* <div className="w-full mx-auto border-gray-200 divide-y divide-gray-200 max-w-7xl border-x">
-                {[...Array(4)].map(_ => (
-                    <div className="grid grid-cols-4 text-gray-700 cursor-pointer">
-                        <div className="flex flex-col p-4">
-                            <div className="w-full bg-gray-200 rounded-md aspect-square">
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col col-span-3 py-2">
-                            <div className="flex flex-row self-end h-6">
-                                <div className="inline-block w-6 overflow-hidden h-9">
-                                    <div className="h-full origin-top-left transform -rotate-45 bg-violet-600"></div>
-                                </div>
-
-                                <div className="flex items-center justify-center px-2 bg-violet-600">
-                                    <span className="text-xs font-semibold tracking-tight text-white uppercase">
-                                        Percorso formativo
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div className="px-4 pb-4 space-y-2">
-                                <h6 className="text-xl font-semibold text-gray-900">
-                                    Flutter Developer
-                                </h6>
-
-                                <p className="text-sm leading-5">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam consequuntur consequatur officia pariatur soluta aliquid eaque.
-                                </p>
-                            </div>
-
-                            <div className="flex flex-row items-center px-4 py-2 mx-4 space-x-4 rounded bg-purple-50">
-                                <div className="flex flex-row items-center space-x-2 text-purple-900">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                    </svg>
-
-                                    <span className="text-sm">
-                                        Novizio
-                                    </span>
-                                </div>
-
-                                <div className="flex flex-row items-center space-x-2 text-purple-900">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-
-                                    <span className="text-sm">
-                                        27 ore
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div className="px-4 py-6 space-y-6">
-                                <div className="space-y-2">
-                                    <h6 className="text-xs font-bold tracking-tight text-purple-800 uppercase">
-                                        Argomenti trattati
-                                    </h6>
-
-                                    <p className="text-sm leading-5">
-                                        Front-End Development Basics, HTML, CSS, Python Syntax,
-                                        Text Processing in Python, DevTools, Command Line Interface
-                                        Basics, Code Debugging, JavaScript Data Structures, Control
-                                        Flow in JavaScript
-                                    </p>
-                                </div>
-
-                                <div className="space-y-2">
-                                    <h6 className="text-xs font-bold tracking-tight text-purple-800 uppercase">
-                                        Prerequisiti
-                                    </h6>
-
-                                    <p className="text-sm leading-5">
-                                        Conoscenza base di programmazione in qualsiasi linguaggio
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-
-                <div className="min-h-screen py-8 w-80">
-                    <div className="pb-2 border-b border-gray-200">
-                        <h6 className="flex flex-col text-xl">
-                            <span className="text-gray-500">Buon pomeriggio,</span>
-                            <span className="font-semibold">Gabriel</span>
-                        </h6>
-                    </div>
-
-                    <div className="flex flex-row items-start w-full p-4 mt-4 space-x-4 rounded-md bg-gray-50">
-                        <div className="flex items-center justify-center w-8 h-8 mt-1 text-white rounded-full bg-violet-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-
-                        <div className="flex-1">
-                            <h6 className="font-semibold">
-                                Riprendi Flutter 2 Start
-                            </h6>
-
-                            <p className="text-sm text-gray-500">
-                                Sei al 23% del corso! Riprendi dalla lezione "Installazione"
-                            </p>
-
-                            <button className="px-4 py-1 mt-1 text-sm font-medium text-white rounded bg-violet-600 focus:outline-none">
-                                Riprendi
-                            </button>
-                        </div>
-                    </div>
-
-                    <div className="mt-8 space-y-4">
-                        <h6 className="text-lg font-bold">
-                            Eventi
-                        </h6>
-
-                        <div className="px-3">
-                            <div className="flex flex-row items-center justify-between">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-                                </svg>
-
-                                <span className="font-semibold">
-                                    Novembre 2021
-                                </span>
-
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                                </svg>
-                            </div>
-
-                            <div className="grid grid-cols-7 gap-1 mt-4">
-                                {["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"].map((text) => (
-                                    <span className="text-xs font-semibold text-gray-400 uppercase">
-                                        {text}
-                                    </span>
-                                ))}
-                            </div>
-
-                            <div className="grid grid-cols-7 gap-1 mt-4 text-center">
-                                {[...Array(28)].map((_, index) => (
-                                    <span className="py-2 text-sm text-gray-700">
-                                        {index + 1}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="mt-8 space-y-4">
-                        <h6 className="text-lg font-bold">
-                            Link utili
-                        </h6>
-
-                        <div className="space-y-2">
-                            {[...Array(2)].map(_ => (
-                                <div className="flex flex-row p-4 space-x-4 rounded bg-gray-50">
-                                    <div className="flex items-center justify-center w-8 h-8 mt-1 text-white rounded-full bg-violet-600" />
-
-                                    <div className="flex-1">
-                                        <h6 className="font-semibold">
-                                            Gruppo telegram
-                                        </h6>
-
-                                        <p className="text-sm text-gray-500">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem vel aliquam tempore.
-                                        </p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </div> */}
         </div >
     )
 }

@@ -1,3 +1,4 @@
+import classNames from "classnames"
 import { motion } from "framer-motion"
 import React from "react"
 import AppBar from "src/components/AppBar"
@@ -75,7 +76,7 @@ export default function pathLanding() {
 
                     <div className="px-12 py-8 space-y-12">
                         <div className="flex flex-row space-x-8 border-b border-gray-200">
-                            <span className="py-4 font-medium border-b cursor-pointer text-violet-600 border-violet-600">
+                            <span className="py-4 font-medium border-b cursor-pointer text-violet-800 border-violet-800">
                                 Generale
                             </span>
                             <span className="py-4 font-medium text-gray-600 cursor-pointer">
@@ -152,10 +153,10 @@ export default function pathLanding() {
                             </h3>
 
                             <p className="mt-4 text-gray-700">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consequatur labore distinctio quas suscipit.
+                                Acquistando questo percorso sbloccherai tutti e 5 i corsi mostrati sotto.
                             </p>
 
-                            <div className="mt-8 divide-y divide-gray-100">
+                            <div className="mt-8">
                                 {[
                                     {
                                         name: "Dart Begin",
@@ -177,23 +178,43 @@ export default function pathLanding() {
                                         name: "Flutter 2 Pro",
                                         infos: "7 ore",
                                     },
-                                ].map(course => (
-                                    <div className="flex flex-row items-center py-2 space-x-4">
-                                        <div className="h-12 bg-gray-300 rounded aspect-square"></div>
-
-                                        <div className="flex-1">
-                                            <h6 className="font-medium">
-                                                {course.name}
-                                            </h6>
-
-                                            <p className="text-sm text-gray-700">
-                                                {course.infos}
-                                            </p>
+                                ].map((course, index) => (
+                                    <div className="flex flex-row items-stretch space-x-4 cursor-pointer">
+                                        <div className="flex flex-col items-center">
+                                            <div className={classNames("flex-1 w-[1px]",
+                                                index === 0
+                                                    ? "bg-transparent"
+                                                    : "bg-gray-200",
+                                            )} />
+                                            <div className="w-3 h-3 my-2 bg-gray-200 rounded-full" />
+                                            <div className={classNames("flex-1 w-[1px]",
+                                                index === 4
+                                                    ? "bg-transparent"
+                                                    : "bg-gray-200",
+                                            )} />
                                         </div>
 
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                                        </svg>
+                                        <div className={classNames("flex flex-row items-center flex-1 py-2 space-x-4", {
+                                            "border-b border-gray-200": index !== 4,
+                                        })}>
+                                            <div className="h-12 bg-center bg-no-repeat bg-cover rounded aspect-square" style={{
+                                                backgroundImage: "url(https://backmain.s3.eu-central-1.amazonaws.com/06751de3-c345-47fd-bc37-2a44ac9ab4177244218256204182333.jpg)",
+                                            }}></div>
+
+                                            <div className="flex-1">
+                                                <h6 className="font-medium">
+                                                    {course.name}
+                                                </h6>
+
+                                                <p className="text-sm text-gray-700">
+                                                    {course.infos}
+                                                </p>
+                                            </div>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
                                     </div>
                                 ))}
                             </div>

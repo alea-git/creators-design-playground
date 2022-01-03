@@ -12,7 +12,7 @@ export default function courseOverview() {
             <ContentHeader>
                 <div className="py-12">
                     <div className="flex flex-col items-center justify-center text-center">
-                        <h1 className="text-3xl font-extrabold tracking-tight">
+                        <h1 className="mt-2 text-3xl font-extrabold tracking-tight">
                             Flutter 2 Start
                         </h1>
 

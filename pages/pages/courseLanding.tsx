@@ -75,7 +75,7 @@ export default function courseLanding() {
 
                     <div className="px-12 py-8 space-y-12">
                         <div className="flex flex-row space-x-8 border-b border-gray-200">
-                            <span className="py-4 font-medium border-b cursor-pointer text-violet-600 border-violet-600">
+                            <span className="py-4 font-medium border-b cursor-pointer text-violet-800 border-violet-800">
                                 Generale
                             </span>
                             <span className="py-4 font-medium text-gray-600 cursor-pointer">

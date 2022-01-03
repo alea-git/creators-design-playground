@@ -42,7 +42,7 @@ export default function homeLibrary() {
                             Stai seguendo:
                         </h6>
 
-                        <h1 className="mt-4 text-4xl font-extrabold">
+                        <h1 className="mt-4 text-3xl font-extrabold">
                             Flutter 2 Start
                         </h1>
 
